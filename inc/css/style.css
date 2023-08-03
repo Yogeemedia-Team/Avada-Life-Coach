@@ -1,0 +1,59 @@
+.text1 {
+  color: #f1642b;
+}
+
+.bg1 {
+  background: #f1642b;
+}
+
+.text2 {
+  color: #3b3a64;
+}
+
+.bg2 {
+  background: #3b3a64;
+}
+
+.font1 {
+  font-family: "Inter", sans-serif;
+}
+
+.font2 {
+  font-family: "Gentium Plus", serif;
+}
+
+
+
+/* responssive css start */
+
+@media only screen and (max-width: 1200px) {
+  /* extra large devices (large laptops and desktops, 1200px and up) */
+  
+}
+
+@media only screen and (max-width: 990px) {
+  /* large devices (laptops and desktops, 990px and up) */
+
+}
+
+@media only screen and (max-width: 770px) {
+  /* medium devices (landscape tablets, 770px and up) */
+
+}
+
+@media only screen and (max-width: 600px) {
+  /* smal devices (portrait tablets and large phones, 600px and up) */
+
+}
+
+@media only screen and (max-width: 460px) {
+  /* extra smal devices (phones, 460px and up) */
+
+}
+
+@media only screen and (max-width: 320px) {
+  /* extra smal devices (phones, 320px and up) */
+
+}
+
+/* responssive css end */
