@@ -22,6 +22,13 @@
   font-family: "Gentium Plus", serif;
 }
 
+/* Show dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+
 
 
 /* responssive css start */
