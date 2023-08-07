@@ -17,6 +17,13 @@
   background: #f1642b;
 }
 
+.btn-small {
+  padding: 10px 20px;
+}
+.btn-large {
+  padding: 20px 30px;
+}
+
 .font1 {
   font-family: "Inter", sans-serif;
 }
@@ -30,7 +37,9 @@
     display: block;
 }
 
-
+section.hero {
+background: url(../img/home/hero-graphic-1.svg);
+}
 
 
 
