@@ -1,17 +1,20 @@
-.text1 {
-  color: #f1642b;
-}
 
-.bg1 {
-  background: #f1642b;
-}
-
-.text2 {
+.text-purple {
   color: #3b3a64;
+  font-weight: 600;
 }
 
-.bg2 {
+.active,
+.text-orange {
+  color: #f1642b;
+  font-weight: 600;
+}
+
+.bg-purple {
   background: #3b3a64;
+}
+.bg-orange {
+  background: #f1642b;
 }
 
 .font1 {
@@ -33,34 +36,35 @@
 
 /* responssive css start */
 
-@media only screen and (max-width: 1200px) {
-  /* extra large devices (large laptops and desktops, 1200px and up) */
+ /* `xxl` extra-large devices (large desktops, less than 1400px) */
+@media (max-width: 1400px) { 
   
-}
+ }
 
-@media only screen and (max-width: 990px) {
-  /* large devices (laptops and desktops, 990px and up) */
+ /* `xl` extra-large devices (desktops, less than 1200px) */
+@media (max-width: 1200px) { 
+  
+ }
 
-}
+ /* `lg` large devices (tablets, less than 992px) */
+@media (max-width: 992px) { 
+  
+ }
 
-@media only screen and (max-width: 770px) {
-  /* medium devices (landscape tablets, 770px and up) */
+ /* `md` medium  devices (landscape phones, less than 768px) */
+@media (max-width: 768px) { 
+  
+ }
 
-}
+ /* `sm` small devices (portrait phones, less than 576px) */
+@media (max-width: 578px) { 
+  
+ }
 
-@media only screen and (max-width: 600px) {
-  /* smal devices (portrait tablets and large phones, 600px and up) */
+ /* `xs` extra-small devices (phones, less than 320px) */
+@media (max-width: 320px) { 
+  
+ }
 
-}
-
-@media only screen and (max-width: 460px) {
-  /* extra smal devices (phones, 460px and up) */
-
-}
-
-@media only screen and (max-width: 320px) {
-  /* extra smal devices (phones, 320px and up) */
-
-}
 
 /* responssive css end */

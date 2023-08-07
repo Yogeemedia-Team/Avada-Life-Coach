@@ -31,61 +31,65 @@
 
 <body>
     <!-- main wrapper start -->
+    <div class="main-wrapper">
 
-    <!-- header start -->
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="./inc/img/home/logo.svg" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse float-lg-end float-md-none" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="home.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about-me.html">About Me</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="services.html" role="button"
-                                aria-expanded="false">
-                                Services
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="career-coaching.html">Career Coaching</a></li>
-                                <li><a class="dropdown-item" href="personal-coaching.html">Personal Coaching</a></li>
-                                <li><a class="dropdown-item" href="wellness-coaching.html">Wellness Coaching</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="testimonials.html">Testimonials</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="blog.html">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="book-session.html">Book A Session</a>
-                        </li>
-                    </ul>
-                    <!-- <form class="d-flex" role="search">
+        <!-- header start -->
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary py-4 px-3">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="./inc/img/home/logo.svg" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse float-lg-end float-md-none" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-purple" href="about-me.html">About Me</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-purple" href="services.html" role="button"
+                                    aria-expanded="false">
+                                    Services
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item text-purple" href="career-coaching.html">Career Coaching</a></li>
+                                    <li><a class="dropdown-item text-purple" href="personal-coaching.html">Personal Coaching</a>
+                                    </li>
+                                    <li><a class="dropdown-item text-purple" href="wellness-coaching.html">Wellness Coaching</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-purple" href="testimonials.html">Testimonials</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-purple" href="blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-purple" href="book-session.html">Book A Session</a>
+                            </li>
+                            <button class="btn bg-orange text-light" type="button">Book A Session</button>
+                        </ul>
+                        <!-- <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form> -->
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
-    <!-- header end -->
+            </nav>
+        </header>
+        <!-- header end -->
 
+    </div>
     <!-- main wrapper end -->
 
 
     <!-- footer start -->
-
     <footer>
         <div class="container-fluid">
             <div class="row">
@@ -101,7 +105,7 @@
                     <div class="col">
                         <p>
                             Copyrights <span id="getYear"></span>
-                            xxxxxxxxxx | Website by
+                            Avada Life Coach | Website by
                             <a target="_blank" title="Click to visit" href="https://yogeemedia.com/">
                                 yogeemedia.com
                             </a>
@@ -112,6 +116,11 @@
         </div>
     </footer>
     <!-- footer end -->
+
+    <script>
+        var getYear = new Date().getFullYear();
+        document.getElementById("getYear").innerHTML = getYear;
+    </script>
 
     <!-- main js -->
     <script src="inc/js/script.js"></script>
@@ -126,6 +135,7 @@
         integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
         </script>
+
 </body>
 
 </html>
