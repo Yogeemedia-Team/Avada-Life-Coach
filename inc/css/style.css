@@ -1,13 +1,66 @@
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: #3b3a64;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  min-height: 200vh;
+}
+
+footer {
+  min-height: 200px;
+}
+
+.main-wrapper {
+  min-height: calc(200vh - 200px);
+}
+
+.font1 {
+  font-family: "Inter", sans-serif;
+}
+
+.font2 {
+  font-family: "Gentium Plus", serif;
+}
+
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled),
+button:not(:disabled) {
+  cursor: pointer;
+  border: none;
+  box-shadow: none;
+}
 
 .text-purple {
   color: #3b3a64;
-  font-weight: 600;
+  font-weight: 6500;
+  transition: all 0.2s ease-in;
+}
+
+.hover-text-orange:hover {
+  color: #f1642b;
+}
+.hover-bg-orange:hover {
+  background: #f1642b;
 }
 
 .active,
 .text-orange {
   color: #f1642b;
   font-weight: 600;
+}
+
+.hover-yellow:hover {
+  background: #eda444;
 }
 
 .bg-purple {
@@ -24,56 +77,76 @@
   padding: 20px 30px;
 }
 
-.font1 {
-  font-family: "Inter", sans-serif;
-}
-
-.font2 {
-  font-family: "Gentium Plus", serif;
+.navbar {
+  max-width: 1500px;
+  margin: auto;
 }
 
 /* Show dropdown menu on hover */
 .dropdown:hover .dropdown-menu {
-    display: block;
+  display: block;
+  transition: all 0.2s ease-in;
 }
+
+/* home page css start */
 
 section.hero {
-background: url(../img/home/hero-graphic-1.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+h1.hero-text {
+  font-size: 3.375rem;
+}
+
+.hero-row-img {
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+  background-size: cover !important;
+}
+
+.hero-img {
+  height: 100%;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important ;
+  width: 100%;
+  object-fit: cover;
+}
+
+.hero-signature img {
+  transform: translate(10%,-60%);
 }
 
 
+/* home page css end */
 
 /* responssive css start */
 
- /* `xxl` extra-large devices (large desktops, less than 1400px) */
-@media (max-width: 1400px) { 
-  
- }
+/* `xxl` extra-large devices (large desktops, less than 1400px) */
+@media (max-width: 1400px) {
+}
 
- /* `xl` extra-large devices (desktops, less than 1200px) */
-@media (max-width: 1200px) { 
-  
- }
+/* `xl` extra-large devices (desktops, less than 1200px) */
+@media (max-width: 1200px) {
+}
 
- /* `lg` large devices (tablets, less than 992px) */
-@media (max-width: 992px) { 
-  
- }
+/* `lg` large devices (tablets, less than 992px) */
+@media (max-width: 992px) {
+}
 
- /* `md` medium  devices (landscape phones, less than 768px) */
-@media (max-width: 768px) { 
-  
- }
+/* `md` medium  devices (landscape phones, less than 768px) */
+@media (max-width: 768px) {
+}
 
- /* `sm` small devices (portrait phones, less than 576px) */
-@media (max-width: 578px) { 
-  
- }
+/* `sm` small devices (portrait phones, less than 576px) */
+@media (max-width: 578px) {
+}
 
- /* `xs` extra-small devices (phones, less than 320px) */
-@media (max-width: 320px) { 
-  
- }
-
+/* `xs` extra-small devices (phones, less than 320px) */
+@media (max-width: 320px) {
+}
 
 /* responssive css end */
