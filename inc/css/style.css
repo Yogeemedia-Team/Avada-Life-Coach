@@ -1,3 +1,9 @@
+:root {
+  --animation: all 0.3s ease-in;
+  --transform-scale: scale(1.05);
+  --transform-left: translate(-10%,-50%);
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -13,10 +19,12 @@ li {
 
 body {
   min-height: 200vh;
+  font-family: "Inter", sans-serif;
 }
 
 footer {
   min-height: 200px;
+  background: linear-gradient(180deg);
 }
 
 .main-wrapper {
@@ -42,8 +50,8 @@ button:not(:disabled) {
 
 .text-purple {
   color: #3b3a64;
-  font-weight: 6500;
-  transition: all 0.2s ease-in;
+  font-weight: 500;
+  transition: var(--animation);
 }
 
 .hover-text-orange:hover {
@@ -59,15 +67,28 @@ button:not(:disabled) {
   font-weight: 600;
 }
 
-.hover-yellow:hover {
+.text-yellow {
+  color: #eda444;
+}
+
+.hover-text-yellow:hover {
+  color: #eda444;
+}
+
+.hover-bg-yellow:hover {
   background: #eda444;
 }
 
 .bg-purple {
   background: #3b3a64;
 }
+
 .bg-orange {
   background: #f1642b;
+}
+
+.bg-yellow {
+  background: #eda444;
 }
 
 .btn-small {
@@ -90,11 +111,12 @@ button:not(:disabled) {
 
 /* home page css start */
 
+/* hero section start */
+
 section.hero {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
 }
 
 h1.hero-text {
@@ -117,8 +139,70 @@ h1.hero-text {
 }
 
 .hero-signature img {
-  transform: translate(10%,-60%);
+  transform: translate(10%, -60%);
 }
+
+.tree-card {
+  padding-top: 10rem;
+}
+
+/* hero section end */
+
+/* three card section start */
+
+.card-box {
+  transition: var(--animation);
+}
+
+.card-box:hover {
+  transform: var(--transform-scale);
+}
+
+.card2-img1 {
+  width: 200px;
+  height: 175px;
+  margin-left: 50px;
+  z-index: 2;
+}
+
+.card2-img2 {
+  width: 150px;
+  height: 150px;
+  margin-left: 160px;
+  margin-top: 25px;
+  position: absolute;
+}
+
+/* three card section end */
+
+/* four card sectin start */
+
+.four-card-left-img {
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+height: 100%;
+}
+
+.four-card-img {
+  height: 360px;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.four-card-text-box {
+  position: absolute;
+  transition: var(--animation);
+  top: 50%;
+  left: -15%;
+  transform: translate(0,-50%);
+}
+
+.four-card-text-box:hover {
+  transform: var(--transform-left);
+}
+
+/* four card sectin end */
 
 
 /* home page css end */
@@ -134,7 +218,28 @@ h1.hero-text {
 }
 
 /* `lg` large devices (tablets, less than 992px) */
+
+/* four card sectin @media 992px start */
+
 @media (max-width: 992px) {
+  .four-card-text-box {
+  position: relative;
+  transition: var(--animation);
+  top: 0%;
+  left: 0%;
+  transform: translate(0,0);
+}
+
+.four-card-text-box:hover {
+  transform: var(--transform-scale);
+}
+
+.four-card-img {
+  height: auto;
+}
+
+/* four card sectin @media 992px end */
+
 }
 
 /* `md` medium  devices (landscape phones, less than 768px) */
