@@ -1,7 +1,7 @@
 :root {
   --animation: all 0.3s ease-in;
   --transform-scale: scale(1.05);
-  --transform-left: translate(-10%,-50%);
+  --transform-left: translate(-5%, -50%);
 }
 
 html {
@@ -150,10 +150,12 @@ h1.hero-text {
 
 /* three card section start */
 
+img.home-video-img,
 .card-box {
   transition: var(--animation);
 }
 
+img.home-video-img,
 .card-box:hover {
   transform: var(--transform-scale);
 }
@@ -178,10 +180,10 @@ h1.hero-text {
 /* four card sectin start */
 
 .four-card-left-img {
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
 }
 
 .four-card-img {
@@ -195,7 +197,7 @@ height: 100%;
   transition: var(--animation);
   top: 50%;
   left: -15%;
-  transform: translate(0,-50%);
+  transform: translate(0, -50%);
 }
 
 .four-card-text-box:hover {
@@ -203,7 +205,6 @@ height: 100%;
 }
 
 /* four card sectin end */
-
 
 /* home page css end */
 
@@ -223,23 +224,22 @@ height: 100%;
 
 @media (max-width: 992px) {
   .four-card-text-box {
-  position: relative;
-  transition: var(--animation);
-  top: 0%;
-  left: 0%;
-  transform: translate(0,0);
-}
+    position: relative;
+    transition: var(--animation);
+    top: 0%;
+    left: 0%;
+    transform: translate(0, 0);
+  }
 
-.four-card-text-box:hover {
-  transform: var(--transform-scale);
-}
+  .four-card-text-box:hover {
+    transform: var(--transform-scale);
+  }
 
-.four-card-img {
-  height: auto;
-}
+  .four-card-img {
+    height: auto;
+  }
 
-/* four card sectin @media 992px end */
-
+  /* four card sectin @media 992px end */
 }
 
 /* `md` medium  devices (landscape phones, less than 768px) */
