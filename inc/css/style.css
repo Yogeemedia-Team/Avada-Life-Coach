@@ -13,6 +13,10 @@ a {
   color: #3b3a64;
 }
 
+a:hover {
+  color: #eda444;
+}
+
 li {
   list-style: none;
 }
@@ -155,7 +159,7 @@ img.home-video-img,
   transition: var(--animation);
 }
 
-img.home-video-img,
+img.home-video-img:hover,
 .card-box:hover {
   transform: var(--transform-scale);
 }
