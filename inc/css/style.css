@@ -199,6 +199,11 @@ img.home-video-img:hover,
   position: absolute;
 }
 
+.book-sess-btn {
+  width: 200px;
+  height: 50px;
+}
+
 /* three card section css end */
 
 /* four card sectin css start */
