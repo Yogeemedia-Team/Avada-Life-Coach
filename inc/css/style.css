@@ -2,6 +2,8 @@
   --animation: all 0.3s ease-in;
   --transform-scale: scale(1.03);
   --transform-left: translate(-5%, -50%);
+  --border-right: 2px solid #3b3a64;
+  --border-bottom: 2px solid #3b3a64;
 }
 
 html {
@@ -43,6 +45,10 @@ footer {
   font-family: "Gentium Plus", serif;
 }
 
+.fs0 {
+  font-size: 0.9rem;
+}
+
 .fs1 {
   font-size: 1.1rem;
 }
@@ -68,6 +74,7 @@ button:not(:disabled) {
 
 .hover-text-orange:hover {
   color: #f1642b;
+  transition: var(--animation);
 }
 .hover-bg-orange:hover {
   background: #f1642b;
@@ -85,6 +92,7 @@ button:not(:disabled) {
 
 .hover-text-yellow:hover {
   color: #eda444;
+  transition: var(--animation);
 }
 
 .hover-bg-yellow:hover {
@@ -261,6 +269,26 @@ img.home-video-img:hover,
   }
 }
 /* marquee css end */
+
+/* footer css start */
+
+.hvr-forward {
+  transition: var(--animation);
+}
+.hvr-forward:hover {
+  border-right: var(--border-right);
+}
+
+.hvr-eft-bdr-bt {
+  transition: var(--animation);
+}
+
+.hvr-eft-bdr-bt:hover {
+  border-bottom: var(--border-bottom);
+  color: #3b3a64;
+}
+
+/* footer css end */
 
 /* home page css end */
 
