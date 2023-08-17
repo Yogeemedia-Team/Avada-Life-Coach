@@ -1,22 +1,28 @@
 :root {
+  --light-bg: #fcf7f6;
+  --purple: #3b3a64;
+  --orange: #f1642b;
+  --yellow: #eda444;
   --animation: all 0.3s ease-in;
   --transform-scale: scale(1.03);
   --transform-left: translate(-5%, -50%);
-  --border-right: 2px solid #3b3a64;
-  --border-bottom: 2px solid #3b3a64;
+  --border-right: 2px solid var(--purple);
+  --border-bottom: 2px solid var(--purple);
 }
 
 html {
   scroll-behavior: smooth;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 a {
   text-decoration: none;
-  color: #3b3a64;
+  color: var(--purple);
 }
 
 a:hover {
-  color: #eda444;
+  color: var(--yellow);
 }
 
 li {
@@ -67,36 +73,36 @@ button:not(:disabled) {
 }
 
 .text-purple {
-  color: #3b3a64;
+  color: var(--purple);
   font-weight: 500;
   transition: var(--animation);
 }
 
 .hover-text-orange:hover {
-  color: #f1642b;
+  color: var(--orange);
   transition: var(--animation);
 }
 .hover-bg-orange:hover {
-  background: #f1642b;
+  background: var(--orange);
 }
 
 .active,
 .text-orange {
-  color: #f1642b;
+  color: var(--orange);
   font-weight: 600;
 }
 
 .text-yellow {
-  color: #eda444;
+  color: var(--yellow);
 }
 
 .hover-text-yellow:hover {
-  color: #eda444;
+  color: var(--yellow);
   transition: var(--animation);
 }
 
 .hover-bg-yellow:hover {
-  background: #eda444;
+  background: var(--yellow);
 }
 
 .hover-bg-lblue:hover {
@@ -104,26 +110,31 @@ button:not(:disabled) {
 }
 
 .bg-purple {
-  background: #3b3a64;
+  background: var(--purple);
 }
 
 .bg-orange {
-  background: #f1642b;
+  background: var(--orange);
 }
 
 .bg-yellow {
-  background: #eda444;
+  background: var(--yellow);
 }
 
 .btn-small {
   padding: 10px 20px;
 }
+
 .btn-large {
   padding: 20px 30px;
 }
 
+header {
+  background: var(--light-bg);
+}
+
 .navbar {
-  max-width: 1500px;
+  max-width: 1600px;
   margin: auto;
 }
 
@@ -197,11 +208,6 @@ img.home-video-img:hover,
   margin-left: 160px;
   margin-top: 25px;
   position: absolute;
-}
-
-.book-sess-btn {
-  width: 200px;
-  height: 50px;
 }
 
 /* three card section css end */
@@ -290,7 +296,7 @@ img.home-video-img:hover,
 
 .hvr-eft-bdr-bt:hover {
   border-bottom: var(--border-bottom);
-  color: #3b3a64;
+  color: var(--purple);
 }
 
 /* footer css end */
