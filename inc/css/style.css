@@ -144,6 +144,11 @@ header {
   transition: all 0.2s ease-in;
 }
 
+.dropdown-item:hover {
+  background: none;
+  color: var(--purple);
+}
+
 /* home page css start */
 
 /* hero section css start */
@@ -178,7 +183,7 @@ h1.hero-text {
 }
 
 .tree-card {
-  padding-top: 10rem;
+  padding-top: 5rem;
 }
 
 /* hero section css end */
@@ -196,18 +201,15 @@ img.home-video-img:hover,
 }
 
 .card2-img1 {
-  width: 200px;
-  height: 175px;
-  margin-left: 50px;
+  width: 80%;
+  height: 180px;
   z-index: 2;
 }
 
 .card2-img2 {
-  width: 150px;
+  width: 100%;
   height: 150px;
-  margin-left: 160px;
-  margin-top: 25px;
-  position: absolute;
+  margin-top: 30px;
 }
 
 /* three card section css end */
@@ -268,7 +270,7 @@ img.home-video-img:hover,
   position: absolute;
   white-space: nowrap;
   will-change: transform;
-  animation: marquee 15s linear infinite;
+  animation: marquee 20s linear infinite;
 }
 
 @keyframes marquee {
@@ -282,6 +284,9 @@ img.home-video-img:hover,
 /* marquee css end */
 
 /* footer css start */
+.hvr-forward a:hover {
+  color: var(--purple);
+}
 
 .hvr-forward {
   transition: var(--animation);
@@ -343,6 +348,11 @@ img.home-video-img:hover,
 
 /* `sm` small devices (portrait phones, less than 576px) */
 @media (max-width: 578px) {
+  .footer-txt,
+  .footer-link,
+  .copyright-txt {
+    text-align: center;
+  }
 }
 
 /* `xs` extra-small devices (phones, less than 320px) */
