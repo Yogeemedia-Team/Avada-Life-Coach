@@ -157,10 +157,11 @@ header {
 
 /* hero section css start */
 
-section.hero {
-  background-position: center;
+.hero {
+  background-position: center !important;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover !important;
+  object-fit: contain;
 }
 
 .hero-row-img {
