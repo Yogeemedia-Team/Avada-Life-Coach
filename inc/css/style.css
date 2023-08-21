@@ -63,6 +63,10 @@ footer {
   font-size: 3.1rem;
 }
 
+.fs4 {
+  font-size: 3.375rem;
+}
+
 [type="button"]:not(:disabled),
 [type="reset"]:not(:disabled),
 [type="submit"]:not(:disabled),
@@ -157,10 +161,6 @@ section.hero {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-h1.hero-text {
-  font-size: 3.375rem;
 }
 
 .hero-row-img {
@@ -344,6 +344,23 @@ img.home-video-img:hover,
 
 /* `md` medium  devices (landscape phones, less than 768px) */
 @media (max-width: 768px) {
+
+.fs0 {
+  font-size: 0.5rem;
+}
+
+.fs1 {
+  font-size: 0.8rem;
+}
+
+.fs3 {
+  font-size: 2.5rem;
+}
+
+.fs4 {
+  font-size: 2.8rem;
+}
+
 }
 
 /* `sm` small devices (portrait phones, less than 576px) */
