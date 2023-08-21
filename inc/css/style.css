@@ -135,6 +135,14 @@ button:not(:disabled) {
   padding: 20px 30px;
 }
 
+/* home page css start */
+
+/* navbar css start */
+
+.dropdown-menu {
+  width: 400px;
+}
+
 header {
   background: var(--light-bg);
 }
@@ -148,6 +156,10 @@ header {
   margin: auto;
 }
 
+.nav-link {
+  padding-top: 1rem;
+}
+
 /* Show dropdown menu on hover */
 .dropdown:hover .dropdown-menu {
   display: block;
@@ -159,7 +171,7 @@ header {
   color: var(--purple);
 }
 
-/* home page css start */
+/* navbar css end */
 
 /* hero section css start */
 
@@ -330,6 +342,30 @@ img.home-video-img:hover,
 /* four card sectin @media 992px css start */
 
 @media (max-width: 992px) {
+  .navbar-nav li a {
+    padding: 1rem !important;
+  }
+
+  .active,
+  .navbar-nav li a:hover {
+    background: var(--orange);
+    color: #ffffff;
+  }
+
+  .dropdown-menu {
+    width: 100%;
+  }
+
+  .drop-item-link {
+    width: 100%;
+    display: block;
+    font-family: "Inter", sans-serif;
+  }
+
+  .drop-item-link:hover {
+    background: var(--orange);
+  }
+
   .four-card-text-box {
     position: relative;
     transition: var(--animation);
@@ -372,9 +408,9 @@ img.home-video-img:hover,
     text-align: center;
   }
 
-.three-card-box {
-  padding: 3rem;
-}
+  .three-card-box {
+    padding: 3rem;
+  }
 }
 
 /* `xs` extra-small devices (phones, less than 320px) */

@@ -39,9 +39,9 @@
     <div class="main-wrapper position-relative">
         <!-- header start -->
         <header>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary py-4 px-2">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary py-4 px-lg-2 px-sm-0">
+                <div class="container-fluid px-0">
+                    <a class="navbar-brand ps-2" href="#">
                         <img src="./inc/img/home/logo.svg" class="logo" alt="logo" />
                     </a>
                     <button onclick="toggleBtn()" class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -51,30 +51,30 @@
                     </button>
                     <div class="collapse navbar-collapse float-lg-end float-md-none" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2">
-                            <li class="nav-item px-3">
-                                <a class="nav-link active hover-text-orange" aria-current="page"
+                            <li class="nav-item px-lg-3 px-md-0">
+                                <a class="nav-link active active hover-text-orange" aria-current="page"
                                     href="home.html">Home</a>
                             </li>
-                            <li class="nav-item px-3">
+                            <li class="nav-item px-lg-3 px-md-0">
                                 <a class="nav-link text-purple hover-text-orange" href="about-me.html">About Me</a>
                             </li>
-                            <li class="nav-item px-3 dropdown">
+                            <li class="nav-item px-lg-3 px-md-0 dropdown">
                                 <a class="nav-link dropdown-toggle text-purple hover-text-orange" href="services.html"
-                                    role="button" aria-expanded="false">Services</a>
-                                <ul class="dropdown-menu m-1 rounded-2 px-2"
-                                    style="transition: var(--animation); width: 400px;">
-                                    <a href="career-coaching.html">
+                                    role="button" data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                                <ul class="dropdown-menu m-lg-1 m-md-0 rounded-4 px-lg-2 px-md-0"
+                                    style="transition: var(--animation);">
+                                    <a href="career-coaching.html" class="drop-item-link">
                                         <li class="row">
                                             <div class=" col-5 p-0">
                                                 <img src="inc/img/home/drop1.png" alt="dropdown-icon"
-                                                    class="d-block m-auto">
+                                                    class="d-lg-block d-md-none m-auto">
                                             </div>
-                                            <div class="col-7 p-0 list-box">
-                                                <div class="dropdown-item text-purple hover-text-orange p-0 font2 fs-5"
+                                            <div class="col-lg-7 col-md-12 p-0 list-box">
+                                                <div class="dropdown-item text-purple hover-text-orange p-0 font2 fs-5 px-lg-0 px-md-5"
                                                     style="letter-spacing: 1px">
                                                     Career Coaching
                                                 </div>
-                                                <div class=" sub-heading text-secondary">
+                                                <div class=" sub-heading text-secondary d-lg-block d-md-none">
                                                     Vivamus magna justo
                                                 </div>
                                             </div>
@@ -84,18 +84,18 @@
                                         <hr class="dropdown-divider mx-3">
                                     </li>
 
-                                    <a href="personal-coaching.html">
+                                    <a href="personal-coaching.html" class="drop-item-link">
                                         <li class="row">
                                             <div class=" col-5 p-0">
                                                 <img src="inc/img/home/drop2.png" alt="dropdown-icon"
-                                                    class="d-block m-auto">
+                                                    class="d-lg-block d-md-none m-auto">
                                             </div>
-                                            <div class="col-7 p-0 list-box">
-                                                <div class="dropdown-item text-purple hover-text-orange p-0 font2 fs-5"
+                                            <div class="col-lg-7 col-md-12 p-0 list-box">
+                                                <div class="dropdown-item text-purple hover-text-orange p-0 font2 fs-5 px-lg-0 px-md-5"
                                                     style="letter-spacing: 1px;">
                                                     Personal Coaching
                                                 </div>
-                                                <div class="sub-heading text-secondary">
+                                                <div class="sub-heading text-secondary d-lg-block d-md-none">
                                                     Pellentesque in ipsum
                                                 </div>
                                             </div>
@@ -104,18 +104,18 @@
                                     <li>
                                         <hr class="dropdown-divider mx-3">
                                     </li>
-                                    <a href="wellness-coaching.html">
+                                    <a href="wellness-coaching.html" class="drop-item-link">
                                         <li class="row">
                                             <div class=" col-5 p-0">
                                                 <img src="inc/img/home/drop3.png" alt="dropdown-icon"
-                                                    class="d-block m-auto">
+                                                    class="d-lg-block d-md-none m-auto">
                                             </div>
-                                            <div class="col-7 p-0 list-box">
-                                                <div class="dropdown-item text-purple hover-text-orange p-0 font2 fs-5"
+                                            <div class="col-lg-7 col-md-12 p-0 list-box">
+                                                <div class="dropdown-item text-purple hover-text-orange p-0 font2 fs-5 px-lg-0 px-md-5"
                                                     style="letter-spacing: 1px;">
                                                     Wellness Coaching
                                                 </div>
-                                                <div class="sub-heading text-secondary">
+                                                <div class="sub-heading text-secondary d-lg-block d-md-none">
                                                     Cras ulricies ligula sed
                                                 </div>
                                             </div>
@@ -123,14 +123,14 @@
                                     </a>
                                 </ul>
                             </li>
-                            <li class="nav-item px-3">
+                            <li class="nav-item px-lg-3 px-md-0">
                                 <a class="nav-link text-purple hover-text-orange"
                                     href="testimonials.html">Testimonials</a>
                             </li>
-                            <li class="nav-item px-3">
+                            <li class="nav-item px-lg-3 px-md-0">
                                 <a class="nav-link text-purple hover-text-orange" href="blog.html">Blog</a>
                             </li>
-                            <li class="nav-item px-3">
+                            <li class="nav-item px-lg-3 px-md-0">
                                 <button class="btn bg-orange fw-bolder btn-small text-light" type="button">
                                     Book A Session
                                 </button>
@@ -159,7 +159,7 @@
                                         <h1 class="hero-text text-purple font2 fs4">
                                             Unlock Your True Potential With Life Coaching Services
                                         </h1>
-                                        <p class="hero-p text-purple fw-light font1" style="font: 18px;">
+                                        <p class="hero-p text-purple fw-light font1" style="font-size: 18px;">
                                             Transform your life and achieve your goals with
                                             professional and personalized support.
                                         </p>
@@ -391,11 +391,11 @@
                         <div class="col-lg-6 col-md-6 col-sm-12">
                             <div class="container p-4">
                                 <h1
-                                    class="home-video-heading fs-6 fw-bolder font2 text-purple text-lg-start text-md-start text-sm-center">
+                                    class="home-video-heading fs2 fw-bolder font2 text-purple text-lg-start text-md-start text-sm-center">
                                     Join me on the journey to unlocking your full potential.
                                 </h1>
-                                <p class="home-video-p text-purple pt-2 fs-5">
-                                    Transform your life and achieve your goals with professional and personalized
+                                <p class="home-video-p text-purple pt-2 fs-5 pe-5">
+                                    Transform your life and achieve your <br> goals with professional and personalized
                                     support.
                                 </p>
                                 <button class="btn bg-purple fw-bolder btn-large text-light mt-5 hover-bg-orange"
