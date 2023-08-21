@@ -126,7 +126,9 @@ button:not(:disabled) {
 }
 
 .btn-small {
-  padding: 10px 20px;
+  padding: 15px 0 15px;
+  font-size: 15px;
+  width: 160px;
 }
 
 .btn-large {
@@ -192,12 +194,12 @@ header {
 /* three card section css start */
 
 img.home-video-img,
-.card-box {
+.three-card-box {
   transition: var(--animation);
 }
 
 img.home-video-img:hover,
-.card-box:hover {
+.three-card-box:hover {
   transform: var(--transform-scale);
 }
 
@@ -345,23 +347,17 @@ img.home-video-img:hover,
 
 /* `md` medium  devices (landscape phones, less than 768px) */
 @media (max-width: 768px) {
+  .fs1 {
+    font-size: 0.8rem;
+  }
 
-.fs0 {
-  font-size: 0.5rem;
-}
+  .fs3 {
+    font-size: 2.5rem;
+  }
 
-.fs1 {
-  font-size: 0.8rem;
-}
-
-.fs3 {
-  font-size: 2.5rem;
-}
-
-.fs4 {
-  font-size: 2.8rem;
-}
-
+  .fs4 {
+    font-size: 2.8rem;
+  }
 }
 
 /* `sm` small devices (portrait phones, less than 576px) */
@@ -371,6 +367,10 @@ img.home-video-img:hover,
   .copyright-txt {
     text-align: center;
   }
+
+.three-card-box {
+  padding: 3rem;
+}
 }
 
 /* `xs` extra-small devices (phones, less than 320px) */
