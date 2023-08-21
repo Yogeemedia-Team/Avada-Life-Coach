@@ -139,6 +139,10 @@ header {
   background: var(--light-bg);
 }
 
+.logo {
+  max-width: 100%;
+}
+
 .navbar {
   max-width: 1600px;
   margin: auto;
