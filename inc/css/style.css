@@ -173,6 +173,10 @@ header {
   color: var(--purple);
 }
 
+.nav-btn {
+  position: relative;
+}
+
 /* navbar css end */
 
 /* hero section css start */
@@ -368,6 +372,10 @@ img.home-video-img:hover,
     background: var(--orange);
   }
 
+  .nav-btn {
+    left: 80%;
+  }
+
   /* dropdown navbar @media css end */
 
   /* four card sectin @media 992px css start */
@@ -404,6 +412,11 @@ img.home-video-img:hover,
   .fs4 {
     font-size: 2.8rem;
   }
+
+  .nav-btn {
+    left: 40%;
+  }
+  
 }
 
 /* `sm` small devices (portrait phones, less than 576px) */
@@ -425,6 +438,10 @@ img.home-video-img:hover,
 
   .dropdown-item {
     padding: 0 20px;
+  }
+
+  .nav-btn {
+    display: none;
   }
 }
 

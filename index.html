@@ -42,12 +42,17 @@
             <nav class="navbar navbar-expand-lg bg-body-tertiary py-4 px-lg-2 px-sm-0">
                 <div class="container-fluid px-0">
                     <a class="navbar-brand ps-2" href="#">
-                        <img src="./inc/img/home/logo.svg" class="logo" alt="logo" />
+                        <img src="./inc/img/home/logo.svg" class="logo position-relative" alt="logo" />
                     </a>
+                    <li class="px-lg-3 px-md-0 d-lg-none d-md-block d-sm-block">
+                        <button class="nav-btn btn bg-orange fw-bolder btn-small text-light" type="button">
+                            Book A Session
+                        </button>
+                    </li>
                     <button onclick="toggleBtn()" class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="fa fa-bars" onclick="changeIcon(this)"></span>
+                        <span class="fa fa-bars py-3 px-4 bg-light float-end" onclick="changeIcon(this)"></span>
                     </button>
                     <div class="collapse navbar-collapse float-lg-end float-md-none" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2">
@@ -130,11 +135,6 @@
                             <li class="nav-item px-lg-3 px-md-0">
                                 <a class="nav-link text-purple hover-text-orange" href="blog.html">Blog</a>
                             </li>
-                            <li class="nav-item px-lg-3 px-md-0">
-                                <button class="btn bg-orange fw-bolder btn-small text-light" type="button">
-                                    Book A Session
-                                </button>
-                            </li>
                         </ul>
                         <!-- <form class="d-flex" role="search">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -142,6 +142,11 @@
                         </form> -->
                     </div>
                 </div>
+                <li class="px-lg-3 px-md-0 d-lg-block d-md-none d-sm-none">
+                    <button class="nav-btn btn bg-orange fw-bolder btn-small text-light" type="button">
+                        Book A Session
+                    </button>
+                </li>
             </nav>
         </header>
         <!-- header end -->
@@ -159,7 +164,7 @@
                                         <h1 class="hero-text text-purple font2 fs4">
                                             Unlock Your True Potential With Life Coaching Services
                                         </h1>
-                                        <p class="hero-p text-purple fw-light font1" style="font-size: 18px;">
+                                        <p class="hero-p text-purple fw-light font1" style="font-size: 1.25rem;">
                                             Transform your life and achieve your goals with
                                             professional and personalized support.
                                         </p>
@@ -188,7 +193,8 @@
                 <div class="container py-5">
                     <div class="row d-flex justify-content-between">
                         <div class="col-lg-4 col-md-4 col-sm-12 pt-3">
-                            <div class="three-card-box rounded mx-lg-3 mx-md-1" style="background: #ffffff; height: 100%;">
+                            <div class="three-card-box rounded mx-lg-3 mx-md-1"
+                                style="background: #ffffff; height: 100%;">
                                 <div class="card text-bg-dark border-0 p-lg-5 p-md-4 p-md-3 mt-2">
                                     <h5 class="card-title fs-6 pt-lg-5 pt-sm-0">A Little Bit About Me</h5>
                                     <p class="card-text">
@@ -472,7 +478,7 @@
                                     class="home-video2-heading fs4 fw-bolde font2 text-purple text-lg-start text-md-start text-sm-center">
                                     Unlock Your True Potential With Life Coaching Services
                                 </h2>
-                                <p class="home-video2-p text-purple pt-2 fs1" style="font-weight: 400;">
+                                <p class="home-video2-p text-purple pt-2" style="font-weight: 400; font-size: 1.25rem;">
                                     Transform your life and achieve your goals with professional and personalized
                                     support.
                                 </p>
