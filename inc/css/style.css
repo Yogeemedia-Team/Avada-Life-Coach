@@ -161,9 +161,11 @@ header {
 }
 
 /* Show dropdown menu on hover */
-.dropdown:hover .dropdown-menu {
-  display: block;
-  transition: all 0.2s ease-in;
+@media only screen and (min-width: 992px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    transition: all 0.2s ease-in;
+  }
 }
 
 .dropdown-item:hover {
@@ -337,11 +339,11 @@ img.home-video-img:hover,
 @media (max-width: 1200px) {
 }
 
-/* `lg` large devices (tablets, less than 992px) */
-
-/* four card sectin @media 992px css start */
-
 @media (max-width: 992px) {
+  /* `lg` large devices (tablets, less than 992px) */
+
+  /* dropdown navbar @media css start */
+
   .navbar-nav li a {
     padding: 1rem !important;
   }
@@ -365,6 +367,10 @@ img.home-video-img:hover,
   .drop-item-link:hover {
     background: var(--orange);
   }
+
+  /* dropdown navbar @media css end */
+
+  /* four card sectin @media 992px css start */
 
   .four-card-text-box {
     position: relative;
@@ -410,6 +416,15 @@ img.home-video-img:hover,
 
   .three-card-box {
     padding: 3rem;
+  }
+
+  .dropdown-icon,
+  .sub-heading {
+    display: none;
+  }
+
+  .dropdown-item {
+    padding: 0 20px;
   }
 }
 
