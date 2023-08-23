@@ -166,6 +166,10 @@ header {
     display: block;
     transition: all 0.2s ease-in;
   }
+
+  ul.dropdown-menu {
+    top: 3.25rem;
+  }
 }
 
 .dropdown-item:hover {
@@ -197,7 +201,7 @@ header {
 .hero-img {
   height: 100%;
   background-size: cover !important;
-  background-position: right bottom !important;
+  background-position: center !important;
   background-repeat: no-repeat !important ;
   width: 100%;
   object-fit: cover;
@@ -353,13 +357,21 @@ img.home-video-img:hover,
   }
 
   .active,
-  .navbar-nav li a:hover {
+  .navbar-nav li a:hover,
+  .btn-group:hover,
+  .btn-group:hover .btn-group a,
+  .btn-group:hover .btn-group button,
+  .drop-item-link:hover .dropdown-item {
     background: var(--orange);
     color: #ffffff;
   }
 
   .dropdown-menu {
     width: 100%;
+  }
+
+  .nav-item.dropdown.btn-group {
+    display: block;
   }
 
   .drop-item-link {
@@ -373,7 +385,7 @@ img.home-video-img:hover,
   }
 
   .nav-btn {
-    left: 80%;
+    left: 70%;
   }
 
   /* dropdown navbar @media css end */
@@ -414,9 +426,8 @@ img.home-video-img:hover,
   }
 
   .nav-btn {
-    left: 40%;
+    left: 20%;
   }
-  
 }
 
 /* `sm` small devices (portrait phones, less than 576px) */
