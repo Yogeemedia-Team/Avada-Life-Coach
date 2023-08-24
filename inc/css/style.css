@@ -201,10 +201,14 @@ header {
 .hero-img {
   height: 100%;
   background-size: cover !important;
-  background-position: center !important;
+  background-position: center;
   background-repeat: no-repeat !important ;
   width: 100%;
   object-fit: cover;
+}
+
+.hero-img-index {
+  background-position: right bottom !important;
 }
 
 .hero-signature img {
@@ -386,6 +390,14 @@ img.home-video-img:hover,
 
   .nav-btn {
     left: 70%;
+  }
+
+  .hero-img {
+    height: 300px;
+  }
+
+  .hero-img-index {
+    background-position: center !important;
   }
 
   /* dropdown navbar @media css end */
