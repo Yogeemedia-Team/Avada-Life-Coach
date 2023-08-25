@@ -276,6 +276,23 @@ img.home-video-img:hover,
 
 /* four card sectin css end */
 
+/* home video section css start */
+
+.video-bg-img {
+  height: 100%;
+  background-size: cover !important;
+  background-position: center;
+  background-repeat: no-repeat !important ;
+  width: 100%;
+  object-fit: cover;
+}
+
+.home-video-img {
+  object-fit: cover;
+}
+
+/* home video section css end */
+
 /* home video2 section css start */
 .home-video2-img1 {
   z-index: 2;
