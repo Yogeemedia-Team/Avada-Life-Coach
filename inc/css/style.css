@@ -56,7 +56,11 @@ footer {
 }
 
 .fs1 {
-  font-size: 1.1rem;
+  font-size: 1.125rem;
+}
+
+.fs2 {
+  font-size: 1.75rem;
 }
 
 .fs3 {
