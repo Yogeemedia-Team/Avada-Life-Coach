@@ -32,6 +32,16 @@
 
     <!-- main css -->
     <link rel="stylesheet" href="inc/css/style.css" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EL36LEQXYG"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-EL36LEQXYG');
+    </script>
 </head>
 
 <body>
@@ -242,7 +252,7 @@
             <!-- brand logo end -->
 
             <!-- about two img section start -->
-            <section class="about-two-img py-5" style="background: var(--light-bg);">
+            <section id="beforecaro" class="about-two-img py-5" style="background: var(--light-bg);">
                 <div class="container">
                     <div class="row p-lg-5 ">
                         <div class="col mx-lg-5 mx-md-3 mx-sm-1 px-lg-5 px-md-3 px-sm-1">
@@ -264,7 +274,7 @@
                                     class="img-fluid position-relative rounded-3 w-100 mt-5" alt="img">
                                 <div class="abou-img-text-box text-purple position-absolute p-5 rounded-3"
                                     style="transform: translateY(-100px); background:var(--light-bg)">
-                                    <h5 class="fs2  font2">Personal <br> Coaching</h5>
+                                    <h5 class="fs2 font2">Personal <br> Coaching</h5>
                                     <p class="fs1 fw-normal">Pellentesque in ipsum id <br> orci porta dapibus.</p>
                                 </div>
                             </div>
@@ -286,86 +296,134 @@
             <!-- about two img section end -->
 
             <!-- about vertical carousel section start -->
-            <section class="about-vertical-carousel pt-5">
+            <section id="verticaro" class="about-vertical-carousel pt-5">
                 <div class="container-fluid">
-                    <div class="carousels-item">
-                        <div class="row">
-                            <div class="col-lg-6 col-sm-12">
-                                <img src="inc/img/about/info-10.jpg" class="img-fluid" alt="carousel img1">
-                            </div>
-                            <div class="col-lg-6 col-sm-12">
-                                <div class="vertical-carousel-text-box position-relative" style="background:url('inc/img/about/info-bg-3.jpg');
-                                background-size: cover; background-position: center center; height: 100%;">
-                                    <div class="carousel-text-box p-5 h-100"
-                                        style="background: url(inc/img/about/info-bg-3.svg); background-position: center; background-size: cover;">
-                                        <h3 class="text-light fs-6 pb-2 p-5">
-                                            Testimonials
-                                        </h3>
-                                        <p class="text-light fs-1 p-5">
-                                            “My life coach helped me achieve my <span class="text-yellow">dreams</span>
-                                            by providing clarity and ongoing support. Their guidance was a game-changer
-                                            for me.”
-                                        </p>
-                                        <h2 class="font2 px-5 text-light">– Jane Smith</h2>
+                    <!-- Carousel https://getbootstrap.com/docs/5.1/components/carousel/ -->
+                    <div class="carousel-container justify-content-center">
+                        <!-- data-bs-interval: the amount of time to delay between automatically cycling an item. If false, carousel will not automatically cycle -->
+                        <!-- data-bs wrap: whether the carousel should cycle continuously (i.e go from first to last and vice-versa) -->
+                        <div id="vertical-carousel" class="carousel slide" data-bs-ride="carousel"
+                            data-bs-interval="false" data-bs-wrap="true">
+                            <!-- Carousel slide indicators -->
+                            <ol class="carousel-indicators">
+                                <li data-bs-target="#vertical-carousel" data-bs-slide-to="0" class="active"></li>
+                                <li data-bs-target="#vertical-carousel" data-bs-slide-to="1"></li>
+                                <li data-bs-target="#vertical-carousel" data-bs-slide-to="2"></li>
+                                <!-- <li data-bs-target="#vertical-carousel" data-bs-slide-to="3"></li> -->
+                            </ol>
+                            <div class="carousel-inner">
+                                <!-- Carousel item represents each slide -->
+                                <div class="carousel-item active">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+                                            <img src="inc/img/about/info-10.jpg" class="carosels-img-fluid"
+                                                alt="carousel img1">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+                                            <div class="vertical-carousel-text-box position-relative"
+                                                style="background:url('inc/img/about/info-bg-3.jpg');
+                                                                    background-size: cover; background-position: center center; height: 100%;">
+                                                <div class="carousel-text-box p-lg-5 p-md-3 p-sm-5 h-100"
+                                                    style="background: url(inc/img/about/info-bg-3.svg); background-position: center; background-size: cover;">
+                                                    <h3
+                                                        class="text-light fs-6 pb-lg-2 pb-md-2 pb-sm-1 p-lg-5 p-md-3 p-sm-5">
+                                                        Testimonials
+                                                    </h3>
+                                                    <p class="text-light fs-1 p-lg-5 p-md-3 p-sm-5">
+                                                        “My life coach has been a <span
+                                                            class="text-yellow">game-changer</span>,
+                                                        helping me set and achieve goals and improve my overall
+                                                        well-being.”
+                                                    </p>
+                                                    <h2 class="font2 px-lg-5 px-md-3 px-sm-5 text-light">
+                                                        – Jane Smith
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 order-lg-2 order-md-2 my-2">
+                                            <img src="inc/img/about/info-7.jpg" class="carosels-img-fluid"
+                                                alt="carousel img2">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+                                            <div class="vertical-carousel-text-box position-relative order-lg-1 order-md-1"
+                                                style="background:url('inc/img/about/info-bg-3.jpg');
+                                                                    background-size: cover; background-position: center center; height: 100%;">
+                                                <div class="carousel-text-box p-lg-5 p-md-3 p-sm-5 h-100"
+                                                    style="background: url(inc/img/about/info-bg-3.svg); background-position: center; background-size: cover;">
+                                                    <h3
+                                                        class="text-light fs-6 pb-lg-2 pb-md-2 pb-sm-1 p-lg-5 p-md-3 p-sm-5">
+                                                        Testimonials
+                                                    </h3>
+                                                    <p class="text-light fs-1 p-lg-5 p-md-3 p-sm-5">
+                                                        “My life coach transformed my life. They provided guidance,
+                                                        <span class="text-yellow">accountability</span> and kept me
+                                                        motivated to
+                                                        achieve my goals. Highly recommend!”
+                                                    </p>
+                                                    <h2 class="font2 px-lg-5 px-md-3 px-sm-5 text-light">
+                                                        – Jane Smith
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+                                            <img src="inc/img/about/info-5.jpg" class="carosels-img-fluid"
+                                                alt="carousel img3">
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+                                            <div class="vertical-carousel-text-box position-relative"
+                                                style="background:url('inc/img/about/info-bg-3.jpg');
+                                                                    background-size: cover; background-position: center center; height: 100%;">
+                                                <div class="carousel-text-box p-lg-5 p-md-3 p-sm-5 h-100"
+                                                    style="background: url(inc/img/about/info-bg-3.svg); background-position: center; background-size: cover;">
+                                                    <h3
+                                                        class="text-light fs-6 pb-lg-2 pb-md-2 pb-sm-1 p-lg-5 p-md-3 p-sm-5">
+                                                        Testimonials
+                                                    </h3>
+                                                    <p class="text-light fs-1 p-lg-5 p-md-3 p-sm-5">
+                                                        “My life coach helped me achieve my <span
+                                                            class="text-yellow">dreams</span>
+                                                        by providing clarity and ongoing support. Their guidance was a
+                                                        game-changer
+                                                        for me.”
+                                                    </p>
+                                                    <h2 class="font2 px-lg-5 px-md-3 px-sm-5 text-light">
+                                                        – Jane Smith
+                                                    </h2>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="carousels-item">
-                        <div class="row">
-                            <div class="col-lg-6 col-sm-12 order-lg-2">
-                                <img src="inc/img/about/info-7.jpg" class="img-fluid" alt="carousel img2">
-                            </div>
-                            <div class="col-lg-6 col-sm-12">
-                                <div class="vertical-carousel-text-box position-relative order-lg-1" style="background:url('inc/img/about/info-bg-3.jpg');
-                                background-size: cover; background-position: center center; height: 100%;">
-                                    <div class="carousel-text-box p-5 h-100"
-                                        style="background: url(inc/img/about/info-bg-3.svg); background-position: center; background-size: cover;">
-                                        <h3 class="text-light fs-6 pb-2 p-5">
-                                            Testimonials
-                                        </h3>
-                                        <p class="text-light fs-1 p-5">
-                                            “My life coach helped me achieve my <span class="text-yellow">dreams</span>
-                                            by providing clarity and ongoing support. Their guidance was a game-changer
-                                            for me.”
-                                        </p>
-                                        <h2 class="font2 px-5 text-light">– Jane Smith</h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousels-item">
-                        <div class="row">
-                            <div class="col-lg-6 col-sm-12">
-                                <img src="inc/img/about/info-5.jpg" class="img-fluid" alt="carousel img3">
-                            </div>
-                            <div class="col-lg-6 col-sm-12">
-                                <div class="vertical-carousel-text-box position-relative" style="background:url('inc/img/about/info-bg-3.jpg');
-                                background-size: cover; background-position: center center; height: 100%;">
-                                    <div class="carousel-text-box p-5 h-100"
-                                        style="background: url(inc/img/about/info-bg-3.svg); background-position: center; background-size: cover;">
-                                        <h3 class="text-light fs-6 pb-2 p-5">
-                                            Testimonials
-                                        </h3>
-                                        <p class="text-light fs-1 p-5">
-                                            “My life coach helped me achieve my <span class="text-yellow">dreams</span>
-                                            by providing clarity and ongoing support. Their guidance was a game-changer
-                                            for me.”
-                                        </p>
-                                        <h2 class="font2 px-5 text-light">– Jane Smith</h2>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <!-- Carousel buttons -->
+                        <!-- <button class="unclickable carousel-control-prev" type="button" data-bs-target="#vertical-carousel"
+                            data-bs-slide="prev">
+                            <span class="clickable carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="unclickable carousel-control-next" type="button" data-bs-target="#vertical-carousel"
+                            data-bs-slide="next">
+                            <span class="clickable carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button> -->
                     </div>
                 </div>
             </section>
             <!-- about vertical carousel section end -->
 
             <!-- home video2 section start -->
-            <section class="home-video2 py-lg-5 pt-md-0">
+            <section id="aftercaro" class="home-video2 py-lg-5 pt-md-0">
                 <div class="container">
                     <div class="row py-5 video-bg-img m-auto">
                         <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-right" data-aos-duration="1000">
@@ -578,6 +636,10 @@
     </footer>
     <!-- footer end -->
 
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- main js -->
     <script src="inc/js/script.js"></script>
@@ -593,10 +655,7 @@
         AOS.init();
     </script>
 
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
-        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </body>
 
 </html>

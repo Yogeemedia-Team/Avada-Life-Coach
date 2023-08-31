@@ -25,3 +25,36 @@ $(document).ready(function () {
     $("#popupVideo").attr("src", url);
   });
 });
+
+//..................
+window.dataLayer = window.dataLayer || [];
+function gtag() {
+  dataLayer.push(arguments);
+}
+gtag("js", new Date());
+
+gtag("config", "G-EL36LEQXYG");
+
+// about vertical carousel
+$("#vertical-carousel").bind("mousewheel DOMMouseScroll", function (e) {
+  e.preventDefault(); // Prevent the default scrolling behavior
+
+  const isScrollingUp =
+    e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0;
+  const isScrollingDown = !isScrollingUp;
+
+  if (isScrollingUp) {
+    $(this).carousel("prev");
+  } else if (isScrollingDown) {
+    $(this).carousel("next");
+  }
+
+  const isFirstSlide = $(this).find(".carousel-item:first").hasClass("active");
+  const isLastSlide = $(this).find(".carousel-item:last").hasClass("active");
+
+  if (isFirstSlide && isScrollingUp) {
+    window.location.hash = "#beforecaro";
+  } else if (isLastSlide && isScrollingDown) {
+    window.location.hash = "#aftercaro";
+  }
+});
