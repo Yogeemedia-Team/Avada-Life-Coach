@@ -412,19 +412,22 @@ section .about-vertical-carousel {
 .carousel-indicators {
   top: 0;
   margin: auto;
-  height: 20px;
-  right: 10px;
+  height: 80px;
+  right: -40px;
   left: auto;
   display: block;
+  background: var(--orange);
+  padding: 15px 5px;
+  border-radius: 15px;
 }
 
 .carousel-indicators [data-bs-target] {
   background: none;
   border: 2px solid rgb(212, 212, 212);
   border-radius: 12px;
-  width: 12px;
-  height: 12px;
-  margin-bottom: 5px;
+  width: 7px;
+  height: 7px;
+  margin-bottom: 10px;
 }
 
 .carousel-indicators li.active {
