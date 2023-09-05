@@ -192,6 +192,67 @@ header {
 
 /* navbar css end */
 
+/* fix two button section css start */
+
+.btn-box {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-box li {
+  margin-right: 70px;
+}
+
+.btn-box a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.btn-box a span {
+  transition: transform 0.2s ease-out;
+}
+
+.btn-box a span:first-child {
+  display: inline-block;
+  padding: 10px;
+}
+
+.btn-box a span:last-child {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-100%);
+}
+
+.btn-box i {
+  font-size: 30px;
+}
+
+.btn-box a:hover span:first-child {
+  transform: translateY(100%);
+}
+
+.btn-box a:hover span:last-child,
+.btn-box[data-animation] a:hover span:last-child {
+  transform: none;
+}
+
+.btn-box[data-animation="to-left"] a span:last-child {
+  transform: translateX(100%);
+}
+
+.btn-box[data-animation="to-left"] a:hover span:first-child {
+  transform: translateX(-100%);
+}
+
+/* fix two button section css end */
+
 /* hero section css start */
 
 .hero {
@@ -343,7 +404,7 @@ img.home-video-img:hover,
 }
 
 .track:hover {
-  animation-play-state:paused;
+  animation-play-state: paused;
 }
 
 /* marquee css end */
