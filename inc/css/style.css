@@ -194,31 +194,31 @@ header {
 
 /* fix two button section css start */
 
-.btn-box {
+.btn-container {
   display: flex;
   justify-content: center;
 }
 
-.btn-box li {
-  margin-right: 70px;
-}
+/* .btn-box li {
+    margin-right: 70px;
+  } */
 
-.btn-box a {
+.btn-box {
   position: relative;
   display: block;
   overflow: hidden;
 }
 
-.btn-box a span {
+.btn-box span {
   transition: transform 0.2s ease-out;
 }
 
-.btn-box a span:first-child {
+.btn-box span:first-child {
   display: inline-block;
   padding: 10px;
 }
 
-.btn-box a span:last-child {
+.btn-box span:last-child {
   position: absolute;
   top: 0;
   right: 0;
@@ -230,24 +230,24 @@ header {
   transform: translateY(-100%);
 }
 
-.btn-box i {
+/* .btn-box i {
   font-size: 30px;
-}
+} */
 
-.btn-box a:hover span:first-child {
+.btn-box:hover span:first-child {
   transform: translateY(100%);
 }
 
-.btn-box a:hover span:last-child,
-.btn-box[data-animation] a:hover span:last-child {
+.btn-box:hover span:last-child,
+.main-box[data-animation] .btn-box:hover span:last-child {
   transform: none;
 }
 
-.btn-box[data-animation="to-left"] a span:last-child {
+.main-box[data-animation="to-left"] .btn-box span:last-child {
   transform: translateX(100%);
 }
 
-.btn-box[data-animation="to-left"] a:hover span:first-child {
+.main-box[data-animation="to-left"] .btn-box:hover span:first-child {
   transform: translateX(-100%);
 }
 
