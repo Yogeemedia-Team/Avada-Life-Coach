@@ -343,7 +343,7 @@ img.home-video-img:hover,
 }
 
 .track:hover {
-  animation: paused;
+  animation-play-state:paused;
 }
 
 /* marquee css end */
