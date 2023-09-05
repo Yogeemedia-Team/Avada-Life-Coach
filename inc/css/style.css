@@ -3,6 +3,7 @@
   --purple: #3b3a64;
   --orange: #f1642b;
   --yellow: #eda444;
+  --dark-purple: #33475b;
   --animation: all 0.3s ease-in;
   --transform-scale: scale(1.03);
   --transform-left: translate(-5%, -50%);
@@ -84,6 +85,10 @@ button:not(:disabled) {
   color: var(--purple);
   font-weight: 500;
   transition: var(--animation);
+}
+
+.text-dark-purple {
+  color: var(--dark-purple);
 }
 
 .hover-text-orange:hover {
@@ -324,6 +329,7 @@ img.home-video-img:hover,
   position: absolute;
   white-space: nowrap;
   will-change: transform;
+  transition: var(--animation);
   animation: marquee 20s linear infinite;
 }
 
@@ -335,6 +341,11 @@ img.home-video-img:hover,
     transform: translateX(-50%);
   }
 }
+
+.track:hover {
+  animation: paused;
+}
+
 /* marquee css end */
 
 /* footer css start */
