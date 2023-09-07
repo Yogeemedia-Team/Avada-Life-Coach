@@ -4,6 +4,7 @@
   --orange: #f1642b;
   --yellow: #eda444;
   --dark-purple: #33475b;
+  --dark-blue: #09202c;
   --animation: all 0.3s ease-in;
   --transform-scale: scale(1.03);
   --transform-left: translate(-5%, -50%);
@@ -24,6 +25,9 @@ a {
 
 a:hover {
   color: var(--yellow);
+}
+.a-not-hover:hover {
+color: var(--purple) !important;
 }
 
 li {
@@ -134,10 +138,19 @@ button:not(:disabled) {
   background: var(--yellow);
 }
 
+.bg-dark-blue {
+  background: var(--dark-blue);
+}
+
 .btn-small {
   padding: 15px 0 15px;
   font-size: 15px;
   width: 160px;
+}
+
+.btn-xs {
+  width: 140px;
+  height: 60px  ;
 }
 
 .btn-large {
@@ -271,7 +284,7 @@ header {
 .hero-img {
   height: 100%;
   background-size: cover !important;
-  background-position: center;
+  background-position: center !important;
   background-repeat: no-repeat !important ;
   width: 100%;
   object-fit: cover;
