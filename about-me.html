@@ -33,15 +33,6 @@
     <!-- main css -->
     <link rel="stylesheet" href="inc/css/style.css" />
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EL36LEQXYG"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-EL36LEQXYG');
-    </script>
 </head>
 
 <body>
@@ -198,7 +189,6 @@
             </div>
         </section>
         <!-- fix two button section end -->
-
 
         <!-- Modal section start -->
         <section class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -953,6 +943,32 @@
         AOS.init();
     </script>
 
+    <script>
+        // about vertical carousel
+        $("#vertical-carousel").bind("mousewheel DOMMouseScroll", function (e) {
+            e.preventDefault(); // Prevent the default scrolling behavior
+
+            const isScrollingUp =
+                e.originalEvent.wheelDelta > 0 || e.originalEvent.detail < 0;
+            const isScrollingDown = !isScrollingUp;
+
+            if (isScrollingUp) {
+                $(this).carousel("prev");
+            } else if (isScrollingDown) {
+                $(this).carousel("next");
+            }
+
+            const isFirstSlide = $(this).find(".carousel-item:first").hasClass("active");
+            const isLastSlide = $(this).find(".carousel-item:last").hasClass("active");
+
+            if (isFirstSlide && isScrollingUp) {
+                window.location.hash = "#beforecaro";
+            } else if (isLastSlide && isScrollingDown) {
+                window.location.hash = "#aftercaro";
+            }
+        });
+
+    </script>
 
 </body>
 
