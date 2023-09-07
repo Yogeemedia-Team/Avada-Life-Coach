@@ -26,6 +26,15 @@ function backToTop() {
   document.documentElement.scrollTop = 0;
 }
 
+// boostrap modal
+const myModal = document.getElementById("myModal");
+const myInput = document.getElementById("myInput");
+
+myModal.addEventListener("shown.bs.modal", () => {
+  myInput.focus();
+});
+  
+
 // copyright text year
 var getYear = new Date().getFullYear();
 document.getElementById("getYear").innerHTML = getYear;
