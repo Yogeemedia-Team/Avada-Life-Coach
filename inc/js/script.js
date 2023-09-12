@@ -62,8 +62,7 @@ myModal.addEventListener("shown.bs.modal", () => {
 var getYear = new Date().getFullYear();
 document.getElementById("getYear").innerHTML = getYear;
 
-
-// .....counter..... // 
+// .....counter..... //
 $(document).ready(function () {
   $(".counter").each(function () {
     $(this)
@@ -81,4 +80,4 @@ $(document).ready(function () {
         }
       );
   });
-});  
+});
