@@ -280,6 +280,13 @@ header {
   object-fit: contain;
 }
 
+.hero-top {
+  background-position: center top !important;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  object-fit: contain;
+}
+
 .hero-row-img {
   background-repeat: no-repeat !important;
   background-position: center center !important;
