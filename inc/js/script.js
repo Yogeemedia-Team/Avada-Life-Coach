@@ -61,3 +61,24 @@ myModal.addEventListener("shown.bs.modal", () => {
 // .....copyright text year...... //
 var getYear = new Date().getFullYear();
 document.getElementById("getYear").innerHTML = getYear;
+
+
+// .....counter..... // 
+$(document).ready(function () {
+  $(".counter").each(function () {
+    $(this)
+      .prop("Counter", 0)
+      .animate(
+        {
+          Counter: $(this).text(),
+        },
+        {
+          duration: 4000,
+          easing: "swing",
+          step: function (now) {
+            $(this).text(Math.ceil(now));
+          },
+        }
+      );
+  });
+});  

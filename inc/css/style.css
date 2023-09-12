@@ -25,10 +25,10 @@ a {
 
 a:hover {
   color: var(--yellow);
-  transition: var(--animation );
+  transition: var(--animation);
 }
 .a-not-hover:hover {
-color: var(--purple) !important;
+  color: var(--purple) !important;
 }
 
 li {
@@ -75,6 +75,10 @@ footer {
 
 .fs4 {
   font-size: 3.375rem;
+}
+
+.fs5 {
+  font-size: 4.375rem;
 }
 
 [type="button"]:not(:disabled),
@@ -151,7 +155,7 @@ button:not(:disabled) {
 
 .btn-xs {
   width: 140px;
-  height: 60px  ;
+  height: 60px;
 }
 
 .btn-large {
@@ -609,7 +613,6 @@ section .about-vertical-carousel {
 
 /* about me page css end */
 
-
 /* service page css start */
 
 p.service-four-card-p {
@@ -702,12 +705,12 @@ p.service-four-card-p {
 
   /* service page @media 992px css start */
 
-p.service-four-card-p {
-  width: 100%;
-  font-size: 1.125rem;
-}
+  p.service-four-card-p {
+    width: 100%;
+    font-size: 1.125rem;
+  }
 
-/* service page @media 992px css end */
+  /* service page @media 992px css end */
 }
 
 /* `md` medium  devices (landscape phones, less than 768px) */

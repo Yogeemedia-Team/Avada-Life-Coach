@@ -33,6 +33,11 @@
     <!-- main css -->
     <link rel="stylesheet" href="inc/css/style.css" />
 
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </head>
 
 <body>
@@ -455,6 +460,85 @@
             </section>
             <!-- about two img section end -->
 
+            <!-- service counter section strat -->
+            <section class="service-counter py-5">
+                <div class="container-fluid py-5 hero"
+                    style="background: linear-gradient(180deg, #272130c7, #1c1622ec), url('inc/img/services/bg-fix-banner.jpg') center/cover; background-attachment: fixed;">
+                    <div class="row">
+                        <div class="col text-center text-light py-5">
+                            <p class="fw-bold">Let’s work together</p>
+                            <h3 class="font2 fs-1">I produce results for our customers</h3>
+                        </div>
+                    </div>
+                    <div class="wow fadeIn animated" style="visibility: visible; animation-name: fadeIn;">
+                        <div class="container">
+                            <div class="row text-light">
+                                <!-- counter -->
+                                <div class="col-md-3 col-sm-6 py-5 bottom-margin text-center counter-section wow fadeInUp sm-margin-bottom-ten animated"
+                                    data-wow-duration="300ms"
+                                    style="visibility: visible; animation-duration: 300ms; animation-name: fadeInUp;">
+                                    <span id="anim-number-pizza" class="counter-number"></span>
+                                    <span class="timer counter alt-font appear fs5" data-to="980"
+                                        data-speed="7000">10</span><br>
+                                    <p class="counter-title mx-2 mx-lg-5">Years Of Experience Helping Clients Achieve
+                                        Their Goals</p>
+                                </div>
+                                <!-- end counter -->
+                                <!-- counter -->
+                                <div class="col-md-3 col-sm-6 py-5 bottom-margin text-center counter-section wow fadeInUp sm-margin-bottom-ten animated"
+                                    data-wow-duration="600ms"
+                                    style="visibility: visible; animation-duration: 600ms; animation-name: fadeInUp;">
+                                    <span class="timer counter alt-font appear fs5" data-to="980"
+                                        data-speed="7000">15</span><br>
+                                    <p class="counter-title mx-2 mx-lg-5">Help Clients From Over 15 Countries</p>
+                                </div>
+                                <!-- end counter -->
+                                <!-- counter -->
+                                <div class="col-md-3 col-sm-6 py-5 bottom-margin-small text-center counter-section wow fadeInUp xs-margin-bottom-ten animated"
+                                    data-wow-duration="900ms"
+                                    style="visibility: visible; animation-duration: 900ms; animation-name: fadeInUp;">
+                                    <span class="timer counter alt-font appear fs5" data-to="810"
+                                        data-speed="7000">10</span><br>
+                                    <p class="counter-title mx-2 mx-lg-5">Voted Top 10 Life Coach In The Country</p>
+                                </div>
+                                <!-- end counter -->
+                                <!-- counter -->
+                                <div class="col-md-3 col-sm-6 py-5 text-center counter-section wow fadeInUp animated"
+                                    data-wow-duration="1200ms"
+                                    style="visibility: visible; animation-duration: 1200ms; animation-name: fadeInUp;">
+                                    <span class="timer counter alt-font appear fs5" data-to="600"
+                                        data-speed="7000">90</span><span class="fs5">%</span><br>
+                                    <p class="counter-title mx-2 mx-lg-5">Clients Achieved Desired Outcome</p>
+                                </div>
+                                <!-- end counter -->
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        $(document).ready(function () {
+                            $(".counter").each(function () {
+                                $(this)
+                                    .prop("Counter", 0)
+                                    .animate(
+                                        {
+                                            Counter: $(this).text(),
+                                        },
+                                        {
+                                            duration: 4000,
+                                            easing: "swing",
+                                            step: function (now) {
+                                                $(this).text(Math.ceil(now));
+                                            },
+                                        }
+                                    );
+                            });
+                        });  
+                    </script>
+                </div>
+            </section>
+
+            <!-- service counter section end -->
+
 
             <!-- home video2 section start -->
             <section class="home-video2 py-lg-5 pt-md-0">
@@ -675,11 +759,6 @@
         <i class="fa-solid fa-chevron-up"></i>
     </button>
 
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
-        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
     <!-- main js -->
     <script src="inc/js/script.js"></script>
 
@@ -693,7 +772,6 @@
     <script>
         AOS.init();
     </script>
-
 
 </body>
 
