@@ -631,6 +631,8 @@ p.service-four-card-p {
 
 /* testimonials page css start */
 
+.four-card-text-box,
+.main-box,
 .card {
   box-shadow: 1px 0px 10px 0px #eae5e5;
   border: none;
