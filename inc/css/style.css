@@ -629,6 +629,16 @@ p.service-four-card-p {
 
 /* service page css end */
 
+/* testimonials page css start */
+
+.card {
+  box-shadow: 1px 0px 10px 0px #eae5e5;
+  border: none;
+  border-radius: 15px;
+}
+
+/* testimonials page css end */
+
 /* responssive css start */
 
 /* `xxl` extra-large devices (large desktops, less than 1400px) */
