@@ -687,6 +687,11 @@ p.service-four-card-p {
     display: block;
   }
 
+  .active-btn-group {
+    background: var(--orange);
+    color: #ffffff;
+  }
+
   .drop-item-link {
     width: 100%;
     display: block;
