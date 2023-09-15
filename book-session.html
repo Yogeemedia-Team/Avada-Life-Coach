@@ -393,7 +393,7 @@
                                 </div>
                                 <div class="order-lg-1 col-lg-5 col-md-12 p-lg-5 p-sm-0" data-aos="fade-right"
                                     data-aos-duration="3000">
-                                    <div class="container p-lg-5 p-sm-0">
+                                    <div class="container p-lg-5 py-5">
                                         <p class="text-orange">
                                             Book A Session
                                         </p>
@@ -415,7 +415,7 @@
             <!-- hero section end -->
 
             <!-- contact section start -->
-            <section class="main-contact-box py-5">
+            <section class="main-contact-box pt-5">
                 <div class="container">
                     <div class="row p-lg-5" data-aos="fade-up" data-aos-duration="3000">
                         <div class="col mx-lg-5 mx-md-3 mx-sm-1 px-lg-5 px-md-3 px-sm-1">
@@ -431,23 +431,88 @@
                     </div>
                     <div class="contact-box pb-5">
                         <div class="row">
-                            <div class="col-lg-5 col-md-12 py-5" data-aos="fade-up" data-aos-duration="1500">
-                                <!-- <img src="inc/img/about/info-5.jpg"
-                                class="img-fluid position-relative rounded-3 w-100 mt-5" alt="img">-->
-                                <div class="abou-img-text-box text-purple position-absolute p-5 rounded-3">
-                                    <!-- <h5 class="fs2 font2">Personal <br> Coaching</h5>
-                                    <p class="fs1 fw-normal">Pellentesque in ipsum id <br> orci porta dapibus.</p> -->
+                            <div class="col-lg-4 col-md-12 py-5" data-aos="fade-right" data-aos-duration="1500">
+                                <div class="contact-deatails-box text-purple rounded-3 mx-4">
+                                    <div class="contact-img">
+                                        <img src="inc/img/services/personal-coaching-hero.jpg" alt="conatct-img"
+                                            class="img-fluid rounded">
+                                    </div>
+                                    <div class="contact-deatails">
+                                        <p class="py-4 m-0 fs1 fw-normal">
+                                            Amet pulvinar dignissim sapien massa amet, ac orci rutrum. Quam in sed leo
+                                            mauris etiam ut diam id.
+                                        </p>
+                                        <h2 class="contact-title py-4 font2 fs-1">
+                                            Donec molestie malesuada.
+                                        </h2>
+                                        <p class="address fs1 fw-normal">
+                                            1234 Avada Avenue <br>
+                                            Avadaville, 11221
+                                        </p>
+                                        <p class="email m-0 fs1 fw-normal">
+                                            <a href="mailto:info@your-company.com">info@your-company.com</a>
+                                        </p>
+                                        <p class="phone fs1 fw-normal">
+                                            <a href="tel:+(1) 234 5678">Call us: (1) 234 5678</a>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                            <div id="beforecaro" class="col-lg-7 col-md-12 py-5" data-aos="fade-up"
-                                data-aos-duration="3000">
-                                <!-- <img src="inc/img/about/info-3.jpg" class="img-fluid position-relative rounded-3 w-100"
-                                    alt="img">-->
-                                <div class="abou-img-text-box text-purple position-absolute p-5 rounded-3">
-                                    <!-- <h5 class="fs2 font2">Personal Coaching</h5>
-                                    <p class="fs1 fw-normal">Pellentesque in ipsum id orci porta dapibus. <br> Donec
-                                        sollicitudin molestie malesuada.</p> -->
-                                </div>
+                            <div class="col"></div>
+                            <div class="col-lg-7 col-md-12 py-5" data-aos="fade-left" data-aos-duration="3000"
+                                style="background: var(--light-bg);">
+                                <form class="contact-form mx-5">
+                                    <div class="row form-row">
+                                        <div class="form-group mb-4 col-md-6">
+                                            <label class="form-title text-purple mb-2" for="inputName">Your name
+                                                *</label>
+                                            <input type="text" class="form-control" id="inputName" required>
+                                        </div>
+                                        <div class="form-group mb-4 col-md-6">
+                                            <label class="form-title text-purple mb-2" for="inputPhone">Phone
+                                                number</label>
+                                            <input type="text" class="form-control" id="inputPhone" required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <label class="form-title text-purple mb-2" for="inputDate">Date of reservation
+                                            *</label>
+                                        <div class="input-group">
+                                            <span
+                                                class="input-group-text fa-solid fa-calendar-days border-end-0 bg-light"></span>
+                                            <input type="text" class="form-control border-start-0" id="inputDate"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <label class="form-title text-purple mb-2" for="inputTime">Time of
+                                            reservation</label>
+                                        <div class="input-group">
+                                            <span
+                                                class="input-group-text fa-solid fa-clock border-end-0 bg-light"></span>
+                                            <input type="text" class="form-control border-start-0" id="inputTime"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group mb-4">
+                                            <label class="form-title text-purple mb-2" for="inputCity">Additional
+                                                note</label>
+                                            <textarea id="additionalNote" class="form-control w-100" rows="5"
+                                                required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                                            <label class="form-check-label text-purple mb-2" for="gridCheck">
+                                                I agree to use my personal data.
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn bg-orange text-light w-100 py-3">Send your
+                                        reservation</button>
+                                </form>
                             </div>
                         </div>
                     </div>

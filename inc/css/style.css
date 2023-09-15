@@ -650,6 +650,39 @@ p.service-four-card-p {
 
 /* testimonials page css end */
 
+/* book a session page css start */
+.form-control:focus,
+.form-control:focus-visible,
+.form-control:active,
+.form-control:focus-within,
+.form-control:visited:target,
+.form-control:hover,
+.input-group:focus,
+.input-group:focus-visible,
+.input-group:active,
+.input-group:focus-within,
+.input-group:visited,
+.input-group:target,
+.input-group:hover {
+  color: var(--purple);
+  background-color: #fff;
+  border-color: var(--orange);
+  outline: 0;
+  box-shadow: 0 0 5px 0px var(--orange);
+}
+
+.form-check-input:checked {
+  background-color: var(--orange);
+  border-color: var(--orange);
+}
+.form-check-input:focus {
+  border-color: var(--orange);
+  outline: 0;
+  box-shadow: 0 0 5px 0px var(--orange);
+}
+
+/* book a session page css end */
+
 /* responssive css start */
 
 /* `xxl` extra-large devices (large desktops, less than 1400px) */
@@ -789,7 +822,6 @@ p.service-four-card-p {
   .nav-btn {
     display: none;
   }
-  
 }
 
 /* `xs` extra-small devices (phones, less than 320px) */
