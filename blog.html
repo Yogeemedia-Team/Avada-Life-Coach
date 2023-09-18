@@ -44,131 +44,10 @@
 <body>
     <!-- main wrapper start -->
     <div class="main-wrapper position-relative">
-        <!-- header start -->
-        <header>
-            <nav class="navbar navbar-expand-lg bg-body-tertiary py-4 px-lg-2 px-sm-0">
-                <div class="container px-0">
-                    <a class="navbar-brand ps-3 ps-lg-5" href="index.html">
-                        <img src="./inc/img/home/logo.svg" class="logo position-relative" alt="logo" />
-                    </a>
-                    <li class="px-lg-3 px-md-0 d-lg-none d-md-block d-sm-block">
-                        <button onclick="window.location.href='book-session.html';"
-                            class="nav-btn btn bg-orange fw-bolder btn-small text-light" type="button">
-                            Book A Session
-                        </button>
-                    </li>
-                    <button onclick="toggleBtn()" class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="fa fa-bars py-3 px-4 bg-light float-end" onclick="changeIcon(this)"></span>
-                    </button>
-                    <div class="collapse navbar-collapse float-lg-end float-md-none" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2">
-                            <li class="nav-item px-lg-3 px-md-0">
-                                <a class="nav-link text-purple hover-text-orange" aria-current="page"
-                                    href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item px-lg-3 px-md-0">
-                                <a class="nav-link text-purple hover-text-orange" href="about-me.html">About Me</a>
-                            </li>
-                            <li class="nav-item px-lg-3 px-md-0 dropdown btn-group">
-                                <button class="col-11 btn text-start p-0" type="button">
-                                    <a class="nav-link text-purple hover-text-orange float-start w-100"
-                                        href="services.html">Services</a>
-                                </button>
-                                <button type="button" class="col-1 btn float-end text-purple p-0 mt-3 mt-lg-2"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    <!-- <span class="visually-hidden">Toggle Dropdown</span> -->
-                                    <i class="fa-solid fa-chevron-down drop-btn" style="font-size: 0.75rem ;"></i>
-                                </button>
-                                <ul class="dropdown-menu m-lg-1 m-md-0 rounded-4 px-lg-2 px-md-0"
-                                    style="transition: var(--animation);">
-                                    <a href="career-coaching.html" class="drop-item-link">
-                                        <li class="row">
-                                            <div class=" col-5 p-0">
-                                                <img src="inc/img/home/drop1.png" alt="dropdown-icon"
-                                                    class="dropdown-icon d-lg-block d-md-none d-sm-none m-auto">
-                                            </div>
-                                            <div class="col-lg-7 col-md-12 p-0 list-box">
-                                                <div class="dropdown-item text-purple hover-text-orange p-0 font2 fs-5 px-lg-0 px-md-5 px-sm-5"
-                                                    style="letter-spacing: 1px">
-                                                    Career Coaching
-                                                </div>
-                                                <div class=" sub-heading text-secondary d-lg-block d-md-non d-sm-none">
-                                                    Vivamus magna justo
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </a>
-                                    <li>
-                                        <hr class="dropdown-divider mx-3">
-                                    </li>
-                                    <a href="personal-coaching.html" class="drop-item-link">
-                                        <li class="row">
-                                            <div class=" col-5 p-0">
-                                                <img src="inc/img/home/drop2.png" alt="dropdown-icon"
-                                                    class="dropdown-icon d-lg-block d-md-none d-sm-none m-auto">
-                                            </div>
-                                            <div class="col-lg-7 col-md-12 p-0 list-box">
-                                                <div class="dropdown-item text-purple hover-text-orange p-0 font2 fs-5 px-lg-0 px-md-5 px-sm-5"
-                                                    style="letter-spacing: 1px;">
-                                                    Personal Coaching
-                                                </div>
-                                                <div class="sub-heading text-secondary d-lg-block d-md-none d-sm-none">
-                                                    Pellentesque in ipsum
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </a>
-                                    <li>
-                                        <hr class="dropdown-divider mx-3">
-                                    </li>
-                                    <a href="wellness-coaching.html" class="drop-item-link">
-                                        <li class="row">
-                                            <div class=" col-5 p-0">
-                                                <img src="inc/img/home/drop3.png" alt="dropdown-icon"
-                                                    class="dropdown-icon d-lg-block d-md-none d-sm-none m-auto">
-                                            </div>
-                                            <div class="col-lg-7 col-md-12 p-0 list-box">
-                                                <div class="dropdown-item text-purple hover-text-orange p-0 font2 fs-5 px-lg-0 px-md-5 px-sm-5"
-                                                    style="letter-spacing: 1px;">
-                                                    Wellness Coaching
-                                                </div>
-                                                <div class="sub-heading text-secondary d-lg-block d-md-none d-sm-none">
-                                                    Cras ulricies ligula sed
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </a>
-                                </ul>
-                            </li>
-                            <li class="nav-item px-lg-3 px-md-0">
-                                <a class="nav-link text-purple hover-text-orange"
-                                    href="testimonials.html">Testimonials</a>
-                            </li>
-                            <li class="nav-item px-lg-3 px-md-0">
-                                <a class="nav-link active text-purple hover-text-orange" href="blog.html">Blog</a>
-                            </li>
-                        </ul>
-                        <!-- <form class="d-flex" role="search">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                            <button class="btn btn-outline-success" type="submit">Search</button>
-                        </form> -->
-                    </div>
-                </div>
-                <li class="px-lg-3 px-md-0 d-lg-block d-md-none d-sm-none">
-                    <button onclick="window.location.href='book-session.html';"
-                        class="nav-btn btn bg-orange fw-bolder btn-small text-light" type="button">
-                        Book A Session
-                    </button>
-                </li>
-            </nav>
-        </header>
-        <!-- header end -->
 
         <!-- fix two button section start -->
         <section class="two-fix-btn position-relative d-none d-sm-block btn" style="z-index: 999;">
-            <div class="btn-container bg-light position-absolute" style="top: 50px;">
+            <div class="btn-container bg-light position-absolute" style="top: 150px;">
                 <div class="main-box bg-light position-fixed text-center end-0 me-4 rounded-3" style="width: 70px;"
                     data-animation="to-left" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <a href="#">
@@ -364,6 +243,128 @@
             </div>
         </section>
         <!-- Modal section end -->
+
+        <!-- header start -->
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary py-4 px-lg-2 px-sm-0">
+                <div class="container px-0">
+                    <a class="navbar-brand ps-3 ps-lg-5" href="index.html">
+                        <img src="./inc/img/home/logo.svg" class="logo position-relative" alt="logo" />
+                    </a>
+                    <li class="px-lg-3 px-md-0 d-lg-none d-md-block d-sm-block">
+                        <button onclick="window.location.href='book-session.html';"
+                            class="nav-btn btn bg-orange fw-bolder btn-small text-light" type="button">
+                            Book A Session
+                        </button>
+                    </li>
+                    <button onclick="toggleBtn()" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="fa fa-bars py-3 px-4 bg-light float-end" onclick="changeIcon(this)"></span>
+                    </button>
+                    <div class="collapse navbar-collapse float-lg-end float-md-none" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2">
+                            <li class="nav-item px-lg-3 px-md-0">
+                                <a class="nav-link text-purple hover-text-orange" aria-current="page"
+                                    href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item px-lg-3 px-md-0">
+                                <a class="nav-link text-purple hover-text-orange" href="about-me.html">About Me</a>
+                            </li>
+                            <li class="nav-item px-lg-3 px-md-0 dropdown btn-group">
+                                <button class="col-11 btn text-start p-0" type="button">
+                                    <a class="nav-link text-purple hover-text-orange float-start w-100"
+                                        href="services.html">Services</a>
+                                </button>
+                                <button type="button" class="col-1 btn float-end text-purple p-0 mt-3 mt-lg-2"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <!-- <span class="visually-hidden">Toggle Dropdown</span> -->
+                                    <i class="fa-solid fa-chevron-down drop-btn" style="font-size: 0.75rem ;"></i>
+                                </button>
+                                <ul class="dropdown-menu m-lg-1 m-md-0 rounded-4 px-lg-2 px-md-0"
+                                    style="transition: var(--animation);">
+                                    <a href="career-coaching.html" class="drop-item-link">
+                                        <li class="row">
+                                            <div class=" col-5 p-0">
+                                                <img src="inc/img/home/drop1.png" alt="dropdown-icon"
+                                                    class="dropdown-icon d-lg-block d-md-none d-sm-none m-auto">
+                                            </div>
+                                            <div class="col-lg-7 col-md-12 p-0 list-box">
+                                                <div class="dropdown-item text-purple hover-text-orange p-0 font2 fs-5 px-lg-0 px-md-5 px-sm-5"
+                                                    style="letter-spacing: 1px">
+                                                    Career Coaching
+                                                </div>
+                                                <div class=" sub-heading text-secondary d-lg-block d-md-non d-sm-none">
+                                                    Vivamus magna justo
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </a>
+                                    <li>
+                                        <hr class="dropdown-divider mx-3">
+                                    </li>
+                                    <a href="personal-coaching.html" class="drop-item-link">
+                                        <li class="row">
+                                            <div class=" col-5 p-0">
+                                                <img src="inc/img/home/drop2.png" alt="dropdown-icon"
+                                                    class="dropdown-icon d-lg-block d-md-none d-sm-none m-auto">
+                                            </div>
+                                            <div class="col-lg-7 col-md-12 p-0 list-box">
+                                                <div class="dropdown-item text-purple hover-text-orange p-0 font2 fs-5 px-lg-0 px-md-5 px-sm-5"
+                                                    style="letter-spacing: 1px;">
+                                                    Personal Coaching
+                                                </div>
+                                                <div class="sub-heading text-secondary d-lg-block d-md-none d-sm-none">
+                                                    Pellentesque in ipsum
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </a>
+                                    <li>
+                                        <hr class="dropdown-divider mx-3">
+                                    </li>
+                                    <a href="wellness-coaching.html" class="drop-item-link">
+                                        <li class="row">
+                                            <div class=" col-5 p-0">
+                                                <img src="inc/img/home/drop3.png" alt="dropdown-icon"
+                                                    class="dropdown-icon d-lg-block d-md-none d-sm-none m-auto">
+                                            </div>
+                                            <div class="col-lg-7 col-md-12 p-0 list-box">
+                                                <div class="dropdown-item text-purple hover-text-orange p-0 font2 fs-5 px-lg-0 px-md-5 px-sm-5"
+                                                    style="letter-spacing: 1px;">
+                                                    Wellness Coaching
+                                                </div>
+                                                <div class="sub-heading text-secondary d-lg-block d-md-none d-sm-none">
+                                                    Cras ulricies ligula sed
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </a>
+                                </ul>
+                            </li>
+                            <li class="nav-item px-lg-3 px-md-0">
+                                <a class="nav-link text-purple hover-text-orange"
+                                    href="testimonials.html">Testimonials</a>
+                            </li>
+                            <li class="nav-item px-lg-3 px-md-0">
+                                <a class="nav-link active text-purple hover-text-orange" href="blog.html">Blog</a>
+                            </li>
+                        </ul>
+                        <!-- <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form> -->
+                    </div>
+                </div>
+                <li class="px-lg-3 px-md-0 d-lg-block d-md-none d-sm-none">
+                    <button onclick="window.location.href='book-session.html';"
+                        class="nav-btn btn bg-orange fw-bolder btn-small text-light" type="button">
+                        Book A Session
+                    </button>
+                </li>
+            </nav>
+        </header>
+        <!-- header end -->
 
         <!-- post content start -->
         <div class="post-content">
