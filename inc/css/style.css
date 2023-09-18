@@ -449,6 +449,10 @@ img.home-video-img:hover,
 /* marquee css end */
 
 /* footer css start */
+.footer-txt {
+  font-weight: 400;
+}
+
 .hvr-forward a:hover {
   color: var(--purple);
 }
