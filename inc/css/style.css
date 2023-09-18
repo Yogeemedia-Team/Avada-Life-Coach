@@ -217,6 +217,11 @@ header {
   position: relative;
 }
 
+.nav-item.dropdown.btn-group:hover .drop-btn {
+  color: var(--orange);
+  transition: var(--animation);
+}
+
 /* navbar css end */
 
 /* fix two button section css start */
@@ -648,6 +653,10 @@ p.service-four-card-p {
   border-radius: 15px;
 }
 
+.three-card-box .card {
+  box-shadow: none;
+}
+
 /* testimonials page css end */
 
 /* book a session page css start */
@@ -715,6 +724,11 @@ p.service-four-card-p {
   .dropdown-menu {
     width: 100%;
   }
+
+  .nav-item.dropdown.btn-group:hover .drop-btn {
+  color: #ffffff;
+  transition: var(--animation);
+}
 
   .nav-item.dropdown.btn-group {
     display: block;
