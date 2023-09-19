@@ -217,6 +217,8 @@ header {
   position: relative;
 }
 
+.nav-item.dropdown.btn-group,
+.drop-btn:hover .dropdown.btn-group .btn a.nav-link,
 .nav-item.dropdown.btn-group:hover .drop-btn {
   color: var(--orange);
   transition: var(--animation);
@@ -451,6 +453,10 @@ img.home-video-img:hover,
 /* footer css start */
 .footer-txt {
   font-weight: 400;
+}
+
+.footer-btn {
+  width: 290px;
 }
 
 .hvr-forward a:hover {
@@ -730,9 +736,9 @@ p.service-four-card-p {
   }
 
   .nav-item.dropdown.btn-group:hover .drop-btn {
-  color: #ffffff;
-  transition: var(--animation);
-}
+    color: #ffffff;
+    transition: var(--animation);
+  }
 
   .nav-item.dropdown.btn-group {
     display: block;
@@ -787,6 +793,12 @@ p.service-four-card-p {
 
   /* four card sectin @media 992px css end */
 
+  /* footer @media 992px css start */
+  .footer-btn {
+    width: 100%;
+  }
+  /* footer @media 992px css end */
+
   /* service page @media 992px css start */
 
   p.service-four-card-p {
@@ -799,7 +811,7 @@ p.service-four-card-p {
 
 /* `md` medium  devices (landscape phones, less than 768px) */
 @media (max-width: 768px) {
-  .fs1 {
+  /* .fs1 {
     font-size: 0.8rem;
   }
 
@@ -809,7 +821,7 @@ p.service-four-card-p {
 
   .fs4 {
     font-size: 2.8rem;
-  }
+  } */
 
   .nav-btn {
     left: 20%;
