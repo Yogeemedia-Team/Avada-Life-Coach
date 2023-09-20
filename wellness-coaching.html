@@ -46,7 +46,7 @@
     <div class="main-wrapper position-relative">
 
         <!-- fix two button section start -->
-        <section class="two-fix-btn position-relative d-none d-sm-block btn" style="z-index: 999;">
+        <section class="two-fix-btn position-relative d-none d-sm-block btn p-0" style="z-index: 999;">
             <div class="btn-container bg-light position-absolute" style="top: 150px;">
                 <div class="main-box bg-light position-fixed text-center end-0 me-4 rounded-3" style="width: 70px;"
                     data-animation="to-left" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -256,11 +256,11 @@
         <!-- header start -->
         <header>
             <nav class="navbar navbar-expand-lg bg-body-tertiary py-4 px-lg-2 px-sm-0">
-                <div class="container px-0">
+                <div class="container-fluid px-0">
                     <a class="navbar-brand ps-3 ps-lg-5" href="index.html">
                         <img src="./inc/img/home/logo.svg" class="logo position-relative" alt="logo" />
                     </a>
-                    <li class="px-lg-3 px-md-0 d-lg-none d-md-block d-sm-block">
+                    <li class="px-lg-3 px-md-0 d-lg-none d-md-block d-sm-block border-0">
                         <button onclick="window.location.href='book-session.html';"
                             class="nav-btn btn bg-orange fw-bolder btn-small text-light" type="button">
                             Book A Session
@@ -291,16 +291,16 @@
                                     <i class="fa-solid fa-chevron-down drop-btn active"
                                         style="font-size: 0.75rem ;"></i>
                                 </button>
-                                <ul class="dropdown-menu m-lg-1 m-md-0 rounded-4 px-lg-2 px-md-0"
+                                <ul class="dropdown-menu border-0 m-lg-1 m-md-0 rounded-4 px-lg-2 px-md-0"
                                     style="transition: var(--animation);">
                                     <a href="career-coaching.html" class="drop-item-link">
-                                        <li class="row">
+                                        <li class="row py-0 py-lg-4">
                                             <div class=" col-5 p-0">
                                                 <img src="inc/img/home/drop1.png" alt="dropdown-icon"
                                                     class="dropdown-icon d-lg-block d-md-none d-sm-none m-auto">
                                             </div>
                                             <div class="col-lg-7 col-md-12 p-0 list-box">
-                                                <div class="dropdown-item text-purple hover-text-orange p-0 font2 fs-5 px-lg-0 px-md-5 px-sm-5"
+                                                <div class="dropdown-item text-purple hover-text-orange p-0 font2 fs-5 px-5 px-lg-0"
                                                     style="letter-spacing: 1px">
                                                     Career Coaching
                                                 </div>
@@ -311,16 +311,16 @@
                                         </li>
                                     </a>
                                     <li>
-                                        <hr class="dropdown-divider mx-3">
+                                        <hr class="dropdown-divider mx-3 my-0 d-none d-lg-block">
                                     </li>
                                     <a href="personal-coaching.html" class="drop-item-link">
-                                        <li class="row">
+                                        <li class="row py-0 py-lg-4">
                                             <div class=" col-5 p-0">
                                                 <img src="inc/img/home/drop2.png" alt="dropdown-icon"
                                                     class="dropdown-icon d-lg-block d-md-none d-sm-none m-auto">
                                             </div>
                                             <div class="col-lg-7 col-md-12 p-0 list-box">
-                                                <div class="dropdown-item text-purple hover-text-orange p-0 font2 fs-5 px-lg-0 px-md-5 px-sm-5"
+                                                <div class="dropdown-item text-purple hover-text-orange p-0 font2 fs-5 px-5 px-lg-0"
                                                     style="letter-spacing: 1px;">
                                                     Personal Coaching
                                                 </div>
@@ -331,16 +331,16 @@
                                         </li>
                                     </a>
                                     <li>
-                                        <hr class="dropdown-divider mx-3">
+                                        <hr class="dropdown-divider mx-3 my-0 d-none d-lg-block">
                                     </li>
                                     <a href="wellness-coaching.html" class="drop-item-link  active-btn-group">
-                                        <li class="row">
+                                        <li class="row py-0 py-lg-4">
                                             <div class=" col-5 p-0">
                                                 <img src="inc/img/home/drop3.png" alt="dropdown-icon"
                                                     class="dropdown-icon d-lg-block d-md-none d-sm-none m-auto">
                                             </div>
                                             <div class="col-lg-7 col-md-12 p-0 list-box">
-                                                <div class="dropdown-item text-purple hover-text-orange active-btn-group p-0 font2 fs-5 px-lg-0 px-md-5 px-sm-5"
+                                                <div class="dropdown-item text-purple hover-text-orange active-btn-group p-0 font2 fs-5 px-5 px-lg-0"
                                                     style="letter-spacing: 1px;">
                                                     Wellness Coaching
                                                 </div>
@@ -589,10 +589,10 @@
             <img src="inc/img/home/footer-pattern.png" alt="footer-pattern">
         </div>
         <div class="container position-relative">
-            <div class="row py-5">
-                <div class="col-sm-4 col-12">
+            <div class="row py-5 px-lg-5">
+                <div class="col-sm-4 col-12 p-lg-0">
                     <a href="index.html">
-                        <img src="inc/img/home/logo.svg" alt="logo" class="logo d-block m-auto">
+                        <img src="inc/img/home/logo.svg" alt="logo" class="logo d-block m-auto m-lg-0">
                     </a>
                 </div>
                 <div class="col-sm-4 col-12 m-auto">
@@ -601,8 +601,9 @@
                         & vitality in your life
                     </p>
                 </div>
-                <div class="col-sm-4 col-12">
-                    <button class="footer-btn btn bg-purple fs1 text-light hover-bg-lblue p-4" type="button">
+                <div class="col-sm-4 col-12 p-lg-0">
+                    <button class="footer-btn btn bg-purple fs1 text-light hover-bg-lblue p-4 float-lg-end"
+                        type="button">
                         Book Appointment
                     </button>
                 </div>
