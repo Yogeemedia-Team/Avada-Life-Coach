@@ -202,6 +202,7 @@ header {
   .dropdown:hover .dropdown-menu {
     display: block;
     transition: all 0.2s ease-in;
+    border-radius: 20px;
   }
 
   ul.dropdown-menu {
@@ -466,7 +467,7 @@ img.home-video-img:hover,
 }
 
 .hvr-forward::before {
-  content: "|";
+  content: "\007C";
   position: absolute;
   top: 0;
   left: 0;
