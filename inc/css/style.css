@@ -446,6 +446,10 @@ img.home-video-img:hover,
   animation-play-state: paused;
 }
 
+.track a:hover {
+  color: #202c46;
+}
+
 /* marquee css end */
 
 /* footer css start */
