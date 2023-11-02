@@ -715,6 +715,35 @@ p.service-four-card-p {
 
 /* book a session page css end */
 
+/* single blog page css start */
+
+/* single blog page css end */
+
+/* single product page css start */
+.input-group-btn {
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  background: #ffffff;
+}
+
+.input-group-btn:hover {
+  border: 1px solid var(--orange);
+}
+
+.btn-number {
+  max-width: 55px;
+  height: 55px;
+  font-size: 18px;
+  text-align: center;
+}
+
+#quantity:hover {
+  border: none;
+  box-shadow: none;
+}
+/* single product page css end */
+
 /* responssive css start */
 
 /* `xxl` extra-large devices (large desktops, less than 1400px) */

@@ -38,18 +38,6 @@
         integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-    <style>
-        .fixed-column {
-            padding: 10px;
-        }
-
-        .scrollable-column {}
-
-        .sticky {
-            position: fixed;
-            top: 0;
-        }
-    </style>
 
 </head>
 
@@ -126,11 +114,13 @@
                                                     data-bs-parent="#menu">
                                                     <li class="w-100">
                                                         <a href="#" class="nav-link px-0"> <span
-                                                                class="d-none d-sm-inline">Item</span> 1 </a>
+                                                                class="d-none d-sm-inline">Item</span> 1
+                                                        </a>
                                                     </li>
                                                     <li>
                                                         <a href="#" class="nav-link px-0"> <span
-                                                                class="d-none d-sm-inline">Item</span> 2 </a>
+                                                                class="d-none d-sm-inline">Item</span> 2
+                                                        </a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -148,11 +138,13 @@
                                                     data-bs-parent="#menu">
                                                     <li class="w-100">
                                                         <a href="#" class="nav-link px-0"> <span
-                                                                class="d-none d-sm-inline">Item</span> 1</a>
+                                                                class="d-none d-sm-inline">Item</span>
+                                                            1</a>
                                                     </li>
                                                     <li>
                                                         <a href="#" class="nav-link px-0"> <span
-                                                                class="d-none d-sm-inline">Item</span> 2</a>
+                                                                class="d-none d-sm-inline">Item</span>
+                                                            2</a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -165,26 +157,31 @@
                                                     data-bs-parent="#menu">
                                                     <li class="w-100">
                                                         <a href="#" class="nav-link px-0"> <span
-                                                                class="d-none d-sm-inline">Product</span> 1</a>
+                                                                class="d-none d-sm-inline">Product</span>
+                                                            1</a>
                                                     </li>
                                                     <li>
                                                         <a href="#" class="nav-link px-0"> <span
-                                                                class="d-none d-sm-inline">Product</span> 2</a>
+                                                                class="d-none d-sm-inline">Product</span>
+                                                            2</a>
                                                     </li>
                                                     <li>
                                                         <a href="#" class="nav-link px-0"> <span
-                                                                class="d-none d-sm-inline">Product</span> 3</a>
+                                                                class="d-none d-sm-inline">Product</span>
+                                                            3</a>
                                                     </li>
                                                     <li>
                                                         <a href="#" class="nav-link px-0"> <span
-                                                                class="d-none d-sm-inline">Product</span> 4</a>
+                                                                class="d-none d-sm-inline">Product</span>
+                                                            4</a>
                                                     </li>
                                                 </ul>
                                             </li>
                                             <li>
                                                 <a href="#" class="nav-link px-0 align-middle">
                                                     <i class="fs-4 bi-people"></i> <span
-                                                        class="ms-1 d-none d-sm-inline">Customers</span> </a>
+                                                        class="ms-1 d-none d-sm-inline">Customers</span>
+                                                </a>
                                             </li>
                                         </ul>
                                     </div>
@@ -281,7 +278,8 @@
                                     href="index.html">Home</a>
                             </li>
                             <li class="nav-item px-lg-3 px-md-0">
-                                <a class="nav-link text-purple hover-text-orange" href="about-me.html">About Me</a>
+                                <a class="nav-link text-purple hover-text-orange" href="about-me.html">
+                                    About Me</a>
                             </li>
                             <li class="nav-item px-lg-3 px-md-0 dropdown btn-group">
                                 <button class="col-11 btn text-start p-0" type="button">
@@ -381,89 +379,109 @@
         <!-- post content start -->
         <div class="post-content">
             <!-- hero section start -->
-            <section class="hero position-relative pb-5">
+            <section class="hero position-relative" style="background: var(--light-bg);">
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col hero-row-img" style="background: url(inc/img/home/hero-graphic-1.svg)">
                             <div class="row">
-                                <div class="col-lg-5 col-md-12 p-lg-5 p-sm-0" data-aos="fade-right"
+                                <div class="order-lg-2 col-lg-7 col-md-12 pt-lg-0 pt-md-3" data-aos="fade-left"
                                     data-aos-duration="3000">
-                                    <div class="container p-lg-5 py-5">
-                                        <p class="text-orange">
-                                            Development
-                                        </p>
-                                        <h1 class="hero-text text-purple font2 fs4">
-                                            Breaking free from limiting beliefs: The power of positive mindset
-                                        </h1>
-                                        <p class="hero-p text-purple font1 me-4"
-                                            style="font-size: 1.25rem; font-weight: 400;">
-                                            Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus
-                                            curabitur non.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="col-lg-7 col-md-12 pt-lg-0 pt-md-3" data-aos="fade-left"
-                                    data-aos-duration="3000">
-                                    <div class="hero-img hero position-relative"
-                                        style="background: url(inc/img/home/four-card-1.jpg);">
+                                    <div class="hero-img position-relative"
+                                        style="background: url(inc/img/contact/contact-hero.jpg); background-position: center !important;">
                                     </div>
                                     <!-- <div class="hero-signature">
                                         <img src="inc/img/home/signature.svg" alt="signature" />
                                     </div> -->
                                 </div>
+                                <div class="order-lg-1 col-lg-5 col-md-12 p-lg-5 p-sm-0" data-aos="fade-right"
+                                    data-aos-duration="3000">
+                                    <div class="container p-lg-5 py-5">
+                                        <ul class="review-stars p-0">
+                                            <li class="fa fa-star text-yellow"></li>
+                                            <li class="fa fa-star text-yellow"></li>
+                                            <li class="fa fa-star text-yellow"></li>
+                                            <li class="fa fa-star text-yellow"></li>
+                                            <li class="fa fa-star text-yellow"></li>
+                                            <a href="#cos-rew" class="a-not-hover">(1 customer review)</a>
+                                        </ul>
+                                        <h1 class="hero-text text-purple font2 fs4">
+                                            Harnessing the Law of Attraction for Success
+                                        </h1>
+                                        <p class="hero-p text-purple font1 "
+                                            style="font-size: 1.25rem; font-weight: 400;">
+                                            Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.
+                                            Pellentesque in ipsum id orci porta dapibus.
+                                        </p>
+                                        <div class="sin-pro-input-group d-flex">
+                                            <div class="input-btn-group d-flex border rounded">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="quantity-left-minus btn btn-number"
+                                                        data-type="minus" data-field="">
+                                                        <i class="fa-solid fa-minus"></i>
+                                                    </button>
+                                                </span>
+                                                <input type="text" id="quantity" name="quantity"
+                                                    class="form-control input-number btn-number border-0" size="4"
+                                                    value="1" min="1" max="100">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="quantity-right-plus btn btn-number"
+                                                        data-type="plus" data-field="">
+                                                        <i class="fa-solid fa-plus"></i>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                            <button class="nav-btn btn bg-purple fw-bolder btn-small text-light mx-4"
+                                                type="button">
+                                                Add To Cart
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <script>
+                    // .....Number increase decrease..... //
+                    $(document).ready(function () {
+                        var quantitiy = 0;
+                        $(".quantity-right-plus").click(function (e) {
+                            // Stop acting like a button
+                            e.preventDefault();
+                            // Get the field name
+                            var quantity = parseInt($("#quantity").val());
+
+                            // If is not undefined
+
+                            $("#quantity").val(quantity + 1);
+
+                            // Increment
+                        });
+
+                        $(".quantity-left-minus").click(function (e) {
+                            // Stop acting like a button
+                            e.preventDefault();
+                            // Get the field name
+                            var quantity = parseInt($("#quantity").val());
+
+                            // If is not undefined
+
+                            // Increment
+                            if (quantity > 0) {
+                                $("#quantity").val(quantity - 1);
+                            }
+                        });
+                    });
+
+                </script>
             </section>
             <!-- hero section end -->
 
             <!-- blog content section start -->
-            <section class="blog-content py-5">
-                <div class="container">
+            <section class="blog-content p-5">
+                <div class="container m-auto w-75">
                     <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-12 fixed-column" style="position: sticky;">
-                            <div class="sidebar">
-                                <div class="progress-bar">
-                                    <!-- Previous markup -->
-                                    <div class="progress">
-                                        <!-- <div class="progress-bar" role="progressbar" aria-label="Basic example"
-                                            style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                        </div> -->
-                                        <progress id="progressbar" value="0" max="100"
-                                            class="position-fixed"></progress>
-                                        <div id="horizontal">test</div>
-                                    </div>
-
-                                    <!-- New markup -->
-                                    <div class="progress" role="progressbar" aria-label="Basic example"
-                                        aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                                        <div class="progress-bar" style="width: 25%"></div>
-                                    </div>
-                                </div>
-                                <div class="nested-nav">
-                                    <div class="container">
-                                        <nav id="navbar-example3"
-                                            class="h-100 flex-column align-items-stretch pe-4 border-end">
-                                            <nav class="nav nav-pills flex-column">
-                                                <a class="nav-link" href="#item-1">
-                                                    Quisque velit nisi, pretium ut lacinia in
-                                                </a>
-                                                <a class="nav-link" href="#item-2">
-                                                    Pellentesque in ipsum id orci porta dapibus.
-                                                </a>
-                                                <nav class="nav nav-pills flex-column">
-                                                    <a class="nav-link ms-3 my-1" href="#item-2-1">
-                                                        Pellentesque in ipsum id orci porta dapibus.
-                                                    </a>
-                                                </nav>
-                                            </nav>
-                                        </nav>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-12 scrollable-column" style="overflow-y: auto;">
+                        <div class="col">
                             <div class="container">
                                 <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
                                     class="scrollspy-example-2" tabindex="0">
@@ -472,25 +490,15 @@
                                     </h3>
                                     <p class="text-purple fs1 fw-normal pt-4" style="line-height: 31px;">
                                         Duis mollis turpis ac diam scelerisque volutpat. Sed neque orci, auctor in
-                                        convallis id, dictum sodales massa. Aenean nisl sapien, congue nec fringilla
-                                        et, tincidunt nec sem. Proin faucibus, dolor vel auctor feugiat, ligula
-                                        sapien venenatis augue, eget ullamcorper tellus justo nec felis. Aenean vel
-                                        justo orci. Maecenas tempor imperdiet ante, hendrerit dignissim nunc
-                                        porttitor nec. Aenean fringilla pulvinar vulputate. Mauris turpis tortor,
-                                        euismod vitae mattis lobortis quis tortor.
-                                    </p>
-                                    <p class="text-purple fs1 fw-normal pt-4" style="line-height: 31px;">
-                                        Suspendisse quam leo, consectetur ac nisi non, feugiat euismod velit.
-                                        Vestibulum finibus, lorem sed mollis consectetur, sem quam egestas ligula,
-                                        et tempus massa elit eget elit. Nam semper scelerisque libero et placerat.
-                                        Nam fringilla fermentum quam ac porta. Cras non dui vulputate dui suscipit
-                                        rhoncus. Etiam auctor ipsum euismod egestas laoreet. Curabitur nec tellus
-                                        convallis, feugiat nibh eu, facilisis felis. Fusce sit amet pellentesque
-                                        purus. Nullam diam sapien, auctor in semper quis, eleifend vel diam.
-                                        Praesent non aliquam nisl.
+                                        convallis id, dictum sodales massa. Aenean nisl sapien, congue nec fringilla et,
+                                        tincidunt nec sem. Proin faucibus, dolor vel auctor feugiat, ligula sapien
+                                        venenatis augue, eget ullamcorper tellus justo nec felis. Aenean vel justo orci.
+                                        Maecenas tempor imperdiet ante, hendrerit dignissim nunc porttitor nec. Aenean
+                                        fringilla pulvinar vulputate. Mauris turpis tortor, euismod vitae mattis
+                                        lobortis quis tortor.
                                     </p>
                                     <div class="single-text-img hero rounded-3 mt-5"
-                                        style="background: url(inc/img/home/four-card-3.jpg); height: 440px;"></div>
+                                        style="background: url(inc/img/services/info-20.jpg); height: 500px;"></div>
                                     <small class="text-center text-purple m-auto d-block py-3">Pellentesque in ipsum
                                         id orci porta dapibus.</small>
                                     <h3 class="font2 text-purple fs-2 pt-5" id="item-2">
@@ -506,32 +514,6 @@
                                         maximus risus. Aenean sed sapien in sapien vulputate pretium vitae nec ex.
                                         Ut id sagittis tellus.
                                     </p>
-                                    <!-- three card section start -->
-                                    <section class="tree-card m-auto p-0">
-                                        <div class="container py-5 px-0">
-                                            <div class="row d-flex justify-content-between">
-                                                <div class="col-lg-4 col-md-4 col-sm-12 pt-3" data-aos="fade-up"
-                                                    data-aos-duration="1000">
-                                                    <div class="three-card-box rounded hero mx-lg-0 mx-md-0"
-                                                        style="background: url(inc/img/services/services-hero-bg.jpg); height: 230px;">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-4 col-md-4 col-sm-12 pt-3" data-aos="fade-up"
-                                                    data-aos-duration="2000">
-                                                    <div class="three-card-box rounded hero mx-lg-0 mx-md-0"
-                                                        style="background: url(inc/img/home/four-card-1.jpg); height: 230px;">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-4 col-md-4 col-sm-12 pt-3" data-aos="fade-up"
-                                                    data-aos-duration="3000">
-                                                    <div class="three-card-box rounded hero mx-lg-0 mx-md-0"
-                                                        style="background: url(inc/img/services/info-19.jpg); height: 230px;">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </section>
-                                    <!-- three card section end -->
                                 </div>
                             </div>
                         </div>
@@ -540,150 +522,158 @@
             </section>
             <!-- blog content section end -->
 
-            <!-- subscribe newsletter section start -->
-            <section class="subscribe-newsletter py-4">
-                <div class="container">
+            <!-- customer review section start -->
+            <section id="cos-rew" class="costomer-review" style="background: var(--light-bg);">
+                <div class="container w-75 p-5">
                     <div class="row">
-                        <div class="col-lg-4 col-md-4 col-sm-12" style="background:#daf2e6; border-radius: 15px;">
-                            <div class="container">
-                                <div class="subscribe-box p-3">
-                                    <div class="subscriber-img">
-                                        <!-- style="mask-image: url(inc/img/blog/mask-1.svg); -webkit-mask-image: url(inc/img/blog/mask-1.svg); mask-repeat: no-repeat; -webkit-mask-repeat: no-repeat;
-                                     width: 100px; height: 100px; max-width: 70px;" -->
-                                        <img src="inc/img/blog/blog-cmt.png" class="mt-4 m-auto d-block"
-                                            alt="sbscribe image" width="100" height="100">
-                                        <p class="subcriber-name py-2 text-center fw-bold m-0">danyduchaine</p>
-                                        <p class="subcriber-text text-center"
-                                            style="font-size: 15px; line-height: 25px; letter-spacing: 0.3px; color: #09202C;">
-                                            Cras ultricies ligula sed magna dictum porta. Vivamus magna justo, lacinia
-                                            eget
-                                            consectetur sed, convallis at tellus. Curabitur arcu erat, accumsan id
-                                            imperdiet
-                                            et, porttitor.
-                                        </p>
-                                    </div>
+                        <div class="col">
+                            <h3 class="review-title font2 text-purple py-3">1 review for Harnessing the Law of
+                                Attraction for Success</h3>
+                            <div class="row costomer-review-box">
+                                <div class="col-1 reveiewer-img">
+                                    <img src="inc/img/blog/blog-cmt.png" class="rounded-circle" style="width: 60px;"
+                                        alt="costomer image">
                                 </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-md-8 col-sm-12">
-                            <div class="container hero h-100" style="background-image: linear-gradient(180deg, #091d27cb, #091d27cb),url('inc/img/services/bg-fix-banner.jpg');
-                            border-radius: 15px;">
-                                <div class="subscribe-form-box p-3 hero">
-                                    <div class="subscriber-img">
-                                        <p class="subcribe-title mt-3 text-light text-center fw-bold m-0">
-                                            Stay in the loop
-                                        </p>
-                                        <h2 class="subscribe-heding text-light text-center font2 fs-1">
-                                            Subscribe to our free newsletter.</h2>
-                                        <form class="container">
-                                            <div class="mb-3 mx-5">
-                                                <input type="email" placeholder="Email address" class="form-control"
-                                                    id="exampleInputEmail1" aria-describedby="emailHelp">
+                                <div class="col review-box border">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="reviewer-deatails d-flex float-start text-purple pt-2 fs0">
+                                                <div class="reviewer-name fw-bold">danyduchaine - </div>
+                                                <div class="reviewer-date">&nbsp;February 14, 2023</div>
                                             </div>
-                                            <div class="mx-5">
-                                                <button type="submit"
-                                                    class="btn bg-orange hover-bg-yellow text-light m-auto w-100 px-5">
-                                                    Subscribe
-                                                </button>
+                                            <ul class="review-stars p-0 float-end pt-2">
+                                                <li class="fa fa-star text-yellow"></li>
+                                                <li class="fa fa-star text-yellow"></li>
+                                                <li class="fa fa-star text-yellow"></li>
+                                                <li class="fa fa-star text-yellow"></li>
+                                                <li class="fa fa-star text-yellow"></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="review-text text-purple py-3 pb-5 lh-lg fs1 fw-normal">
+                                                Maecenas tempor imperdiet ante, hendrerit dignissim nunc porttitor nec.
+                                                Aenean fringilla pulvinar vulputate. Mauris turpis tortor, euismod vitae
+                                                mattis lobortis quis tortor.
                                             </div>
-                                        </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            <!-- subscribe newsletter section end -->
+                    <div class="row add-review">
 
-            <!-- related articles section start -->
-            <section class="related-articles">
-                <div class="container py-5">
-                    <hr style="color: #d6cecc; height: 2px;">
-                    <div class="row py-5 pt-0 container">
-                        <div class="col pt-2" data-aos="fade-up" data-aos-duration="3000">
-                            <!-- <h2 class="text-purple text-center font2 fw-normal fs-1">
-                                Achieving Your Goals and Overcoming Obstacles
-                            </h2> -->
-                            <p class="mt-4 fw-bold" style="color: #09202c;">
-                                Related Articles
+                    </div>
+            </section>
+            <!-- customer review section end -->
+
+            <!-- contact section start -->
+            <section class="main-contact-box pt-5">
+                <div class="container">
+                    <div class="row p-lg-5" data-aos="fade-up" data-aos-duration="3000">
+                        <div class="col mx-lg-5 mx-md-3 mx-sm-1 px-lg-5 px-md-3 px-sm-1">
+                            <h2 class="about-two-img-heading text-purple fs-1 font2 text-center pb-2 mx-lg-5 mx-md-3 mx-sm-0"
+                                style="font-weight: 500;">
+                                Get in Touch: Start Your Path to Personal <br> Growth and Success
+                            </h2>
+                            <p class="text-purple fw-normal text-center px-5 py-3 mx-lg-5 mx-md-3 mx-sm-0"
+                                style="font-size: 1.125rem; letter-spacing: 0.3px;">
+                                Expert guidance and support for creating a fulfilling life on your terms
                             </p>
                         </div>
                     </div>
-                    <div class="container">
+                    <div class="contact-box pb-5">
                         <div class="row">
-                            <div class="col-lg-4 col-md-4 col-sm-12 px-4" data-aos="fade-up" data-aos-duration="1000">
-                                <div class="card border-0">
-                                    <a href="single-blog.html">
-                                        <div class="service-img-box hero-top rounded position-relative"
-                                            style="background: url(inc/img/home/four-card-2.jpg); height: 250px; width: 100%;">
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="card-body text-center text-lg-start">
-                                    <p class="text-success">Development</p>
-                                    <a href="single-blog.html">
-                                        <h4 class="card-title hover-text-orange text-purple font2 fs-4">
-                                            Building Stronger Connections and Improving Communication
-                                        </h4>
-                                    </a>
-                                    <a href="#">
-                                        <p class="text-orange hover-text-yellow ps-0 fw-normal fs-6 pt-2">
-                                            Continue Reading
+                            <div class="col-lg-4 col-md-12 py-5" data-aos="fade-right" data-aos-duration="1500">
+                                <div class="contact-deatails-box text-purple rounded-3 mx-4">
+                                    <div class="contact-img">
+                                        <img src="inc/img/services/personal-coaching-hero.jpg" alt="conatct-img"
+                                            class="img-fluid rounded">
+                                    </div>
+                                    <div class="contact-deatails">
+                                        <p class="py-4 m-0 fs1 fw-normal">
+                                            Amet pulvinar dignissim sapien massa amet, ac orci rutrum. Quam in sed leo
+                                            mauris etiam ut diam id.
                                         </p>
-                                    </a>
+                                        <h2 class="contact-title py-4 font2 fs-1">
+                                            Donec molestie malesuada.
+                                        </h2>
+                                        <p class="address fs1 fw-normal">
+                                            1234 Avada Avenue <br>
+                                            Avadaville, 11221
+                                        </p>
+                                        <p class="email m-0 fs1 fw-normal">
+                                            <a href="mailto:info@your-company.com">info@your-company.com</a>
+                                        </p>
+                                        <p class="phone fs1 fw-normal">
+                                            <a href="tel:+(1) 234 5678">Call us: (1) 234 5678</a>
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-4 col-sm-12 px-4" data-aos="fade-up" data-aos-duration="2000">
-                                <div class="card border-0">
-                                    <a href="single-blog.html">
-                                        <div class="service-img-box hero rounded position-relative"
-                                            style="background: url(inc/img/home/four-card-3.jpg); height: 250px; width: 100%;">
+                            <div class="col"></div>
+                            <div class="col-lg-7 col-md-12 py-5" data-aos="fade-left" data-aos-duration="3000"
+                                style="background: var(--light-bg);">
+                                <form class="contact-form mx-5">
+                                    <div class="row form-row">
+                                        <div class="form-group mb-4 col-md-6">
+                                            <label class="form-title text-purple mb-2" for="inputName">Your name
+                                                *</label>
+                                            <input type="text" class="form-control" id="inputName" required>
                                         </div>
-                                    </a>
-                                </div>
-                                <div class="card-body text-center text-lg-start">
-                                    <p class="text-success">Development, Health & Wellness</p>
-                                    <a href="single-blog.html">
-                                        <h4 class="card-title hover-text-orange text-purple font2 fs-4">
-                                            Mastering Self-Discovery: A Journey to Finding Your Purpose
-                                        </h4>
-                                    </a>
-                                    <a href="#">
-                                        <p class="text-orange hover-text-yellow ps-0 fw-normal fs-6 pt-2">
-                                            Continue Reading
-                                        </p>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-12 px-4" data-aos="fade-up" data-aos-duration="3000">
-                                <div class="card border-0">
-                                    <a href="single-blog.html">
-                                        <div class="service-img-box hero-top rounded position-relative"
-                                            style="background: url(inc/img/home/four-card-4.jpg); height: 250px; width: 100%;">
+                                        <div class="form-group mb-4 col-md-6">
+                                            <label class="form-title text-purple mb-2" for="inputPhone">Phone
+                                                number</label>
+                                            <input type="text" class="form-control" id="inputPhone" required>
                                         </div>
-                                    </a>
-                                </div>
-                                <div class="card-body text-center text-lg-start">
-                                    <p class="text-success">Coaching, Development</p>
-                                    <a href="single-blog.html">
-                                        <h4 class="card-title hover-text-orange text-purple font2 fs-4">
-                                            Strategies for Overcoming Adversity and Achieving Success
-                                        </h4>
-                                    </a>
-                                    <a href="#">
-                                        <p class="text-orange hover-text-yellow ps-0 fw-normal fs-6 pt-2">
-                                            Continue Reading
-                                        </p>
-                                    </a>
-                                </div>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <label class="form-title text-purple mb-2" for="inputDate">Date of reservation
+                                            *</label>
+                                        <div class="input-group">
+                                            <span
+                                                class="input-group-text fa-solid fa-calendar-days border-end-0 bg-light"></span>
+                                            <input type="date" class="form-control border-start-0" id="inputDate"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <label class="form-title text-purple mb-2" for="inputTime">Time of
+                                            reservation</label>
+                                        <div class="input-group">
+                                            <span
+                                                class="input-group-text fa-solid fa-clock border-end-0 bg-light"></span>
+                                            <input type="time" class="form-control border-start-0" id="inputTime"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+                                        <div class="form-group mb-4">
+                                            <label class="form-title text-purple mb-2" for="inputCity">Additional
+                                                note</label>
+                                            <textarea id="additionalNote" class="form-control w-100" rows="5"
+                                                required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                                            <label class="form-check-label text-purple mb-2" for="gridCheck">
+                                                I agree to use my personal data.
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn bg-orange text-light w-100 py-3">Send your
+                                        reservation</button>
+                                </form>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <!-- related articles section end -->
-
+            <!-- contact section end -->
 
         </div>
         <!-- post content end -->
@@ -729,31 +719,31 @@
                         <div class="track mt-4">
                             <div class="content text-purple fs1">
                                 <span>
-                                    <a href="single-blog.html">free from limiting beliefs: The power of positive mindset
+                                    <a href="#">free from limiting beliefs: The power of positive mindset
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
                                 </span>
                                 <span>
-                                    <a href="single-blog.html">Stronger Connections and Improving Communication
+                                    <a href="#">Stronger Connections and Improving Communication
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
                                 </span>
                                 <span>
-                                    <a href="single-blog.html">Self-Discovery: A Journey to Finding Your Purpose
+                                    <a href="#">Self-Discovery: A Journey to Finding Your Purpose
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
                                 </span>
                                 <span>
-                                    <a href="single-blog.html">for Overcoming Adversity and Achieving Success
+                                    <a href="#">for Overcoming Adversity and Achieving Success
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
                                 </span>
                                 <span>
-                                    <a href="single-blog.html">and Techniques for Living in the Present Moment
+                                    <a href="#">and Techniques for Living in the Present Moment
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
                                 </span>
                                 <span>
-                                    <a href="single-blog.html">Overcome Challenges and Embrace Change
+                                    <a href="#">Overcome Challenges and Embrace Change
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
                                 </span>
                                 <span>
-                                    <a href="single-blog.html">Finding Happiness and Fulfillment
+                                    <a href="#">Finding Happiness and Fulfillment
                                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
                                 </span>
                             </div>
@@ -879,10 +869,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <!-- data aos js cdn -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

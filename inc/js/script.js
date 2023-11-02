@@ -81,3 +81,55 @@ $(document).ready(function () {
       );
   });
 });
+
+// .....When the user scrolls the page, execute myFunction..... //
+window.onscroll = function () {
+  myFunction();
+};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+
+$(window).scroll(function () {
+  var s = $(window).scrollTop(),
+    d = $(document).height(),
+    c = $(window).height();
+  scrollPercent = (s / (d - c)) * 100;
+  var position = scrollPercent;
+
+  $("#progressbar").attr("value", position);
+});
+
+
+// .......................
+
+function sticky_relocate() {
+  var window_top = $(window).scrollTop();
+  var footer_top = $(".footer").offset().top - 30;
+  var div_top = $("#sticky-anchor").offset().top;
+  var div_height = $(".sidebar").height();
+  var leftHeight = $(".left-container").height();
+
+  if (window_top + div_height > footer_top) {
+    $(".sidebar").removeClass("stick");
+    $(".sidebar").addClass("abs");
+    $(".right-conatainer").css("min-height", leftHeight + "px");
+  } else if (window_top > div_top) {
+    $(".sidebar").addClass("stick");
+    $(".sidebar").removeClass("abs");
+  } else {
+    $(".sidebar").removeClass("stick");
+    $(".sidebar").removeClass("abs");
+  }
+}
+
+$(function () {
+  $(window).scroll(sticky_relocate);
+  sticky_relocate();
+});
